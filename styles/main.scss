@@ -1,0 +1,50 @@
+
+
+
+/*-- Colors --*/
+
+// Core color palette
+$color-palette: (
+	ocean: (
+		120: #123B99,
+		100: #356AE6,
+		 80: #5884EA,
+		 60: #9EB7F3,
+		 40: #E3EBFC,
+		 20: #FAFBFF
+	),
+	slate: (
+		120: #1F2129,
+		100: #4E5468,
+		 80: #5F667E,
+		 60: #9298AD,
+		 40: #CED3E0,
+		 20: #F7F9FF
+	),
+	mint: (
+		120: #139879,
+		100: #19CCA3,
+		 80: #1BDDB1,
+		 60: #6AE6C9,
+		 40: #B6F2E4,
+		 20: #EBFFFA
+	),
+	strawberry: (
+		120: #139879,
+		100: #19CCA3,
+		 80: #1BDDB1,
+		 60: #6AE6C9,
+		 40: #B6F2E4,
+		 20: #EBFFFA
+	),
+
+)
+
+
+// Returns color from palette
+//
+// Usage: color('ocean', 100);
+// Returns: #356AE6
+@function color($name, $level: 100) {
+	$color: map-get(map-get($color-palette, $name), $level);
+}
