@@ -220,7 +220,7 @@ a:hover {
 }
 
 // Headings
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6,h7, h8 {
 	font-family: $poppins;
 }
 h1 {
@@ -1255,6 +1255,11 @@ footer > .display-wrap {
     -webkit-box-ordinal-group: 2;
     order: 1;
   }
+}
+
+/*-- Tables --*/
+table {
+
 }
 
 /*-- Utilities --*/
