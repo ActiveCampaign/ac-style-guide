@@ -3,4 +3,8 @@ class MainController < ApplicationController
   end
   def colors
   end
+
+  def typography
+
+  end
 end
