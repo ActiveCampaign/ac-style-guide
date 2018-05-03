@@ -211,7 +211,18 @@ $color-palette: (
 $poppins: 'Poppins', Helvetica, sans-serif;
 $ibm-plex: 'IBM Plex Sans', Helvetica, sans-serif;
 
+// Hyperlinks
+a, a:visited {
+	color: color(ocean, 100);
+}
+a:hover {
+	text-decoration: none;
+}
+
 // Headings
+h1,h2,h3,h4,h5,h6 {
+	font-family: $poppins;
+}
 h1 {
 	font-size: 48px;
 	line-height: 60px;
@@ -232,8 +243,16 @@ h5 {
 	font-size: 32px;
 	line-height: 40px;
 }
+h6 {
+	font-size: 28px;
+	line-height: 35px;
+}
 
 // Body / Paragraph
+.text_size-2 {
+	font-size: 14px;
+	line-height: 21px;
+}
 .text_size-3 {
 	font-size: 16px;
 	line-height: 24px;
@@ -250,16 +269,30 @@ h5 {
 	font-size: 24px;
 	line-height: 36px;
 }
+.text_size-7 {
+	font-size: 28px;
+	line-height: 42px;
+}
 
 // Modifiers
 .text_color-white {
 	color: white;
+}
+.text_color-light {
+	color: color(slate, 100);
+}
+.text_color-lighter {
+	color: color(slate, 80);
 }
 .text_color-ocean--20 {
 	color: color(ocean, 20);
 }
 .text_color-ocean--40 {
 	color: color(ocean, 40);
+}
+
+h5 + p {
+	margin-top: -30px;
 }
 
 /*-- Core layout --*/
@@ -276,8 +309,17 @@ header {
 	background-color: color(ocean, 100);
 	padding: 60px;
 }
+footer { 
+margin-top: 60px;
+}
+footer > .display-wrap {
+	border-top: color(slate, 20) 1px solid;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color: color(slate, 60);
+}
 .display-wrap {
-	max-width: 1080px;
+	max-width: 960px;
 	padding: 20px;
 	margin: 0 auto;
 }
@@ -304,6 +346,21 @@ header {
 		}
 	}
 }
+
+// Call outs and other shits
+.example {
+	display: inline-block;
+	background-color: color(slate, 20);
+	padding: 24px;
+	border-radius: 8px;
+}
+.note {
+	background-color: color(ocean, 40);
+	color: color(ocean, 100);
+	border-radius: 8px;
+	padding: 16px;
+}
+
 
 // Grid
 
@@ -1200,4 +1257,13 @@ header {
   }
 }
 
-
+/*-- Utilities --*/
+.no-margin {
+	margin: 0;
+}
+.no-top-margin {
+	margin-top: 0;
+}
+.no-padding {
+	padding: 0;
+}
