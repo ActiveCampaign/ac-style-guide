@@ -1,11 +1,25 @@
 <nav>
-	<ul>
-		<li>
-			<%= link_to "Typography", "/typography" %></a>
-		</li>
-		<li>
-			<%= link_to "Colors", controller: "main", action: "colors" %></a>
-		</li>
-
-	</ul>
+	<div class="display-wrap">
+		<div class="row">
+			<div class="col-xs-4">
+				<%= image_tag("ac-logo-white", width: '258') %>
+			</div>
+			<div class="col-xs">
+				<ul>
+					<li>
+						<%= link_to "Brand", "/brand" %></a>
+					</li>
+					<li>
+						<%= link_to "Typography", "/typography" %></a>
+					</li>
+					<li>
+						<%= link_to "Colors", "/colors" %></a>
+					</li>
+					<li>
+						<%= link_to "Icons", "/icons" %></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 </nav>

@@ -310,7 +310,34 @@ header {
 	padding: 60px 0;
 }
 footer { 
-margin-top: 60px;
+	margin-top: 60px;
+}
+nav {
+	background-color: color(ocean, 100);
+	margin: 0;
+
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 4px 0 0 0;
+
+		li {
+			display: inline-block;
+			margin-right: 6%;
+
+			a, a:visited {
+				color: #fff;
+				font-weight: 800;
+				font-size: 16px;
+				text-decoration: none;
+				opacity: .7;
+
+				&:hover, &.active {
+					opacity: 1;
+				}
+			}
+		}
+	}
 }
 footer > .display-wrap {
 	border-top: color(slate, 20) 1px solid;
@@ -323,30 +350,7 @@ footer > .display-wrap {
 	padding: 20px;
 	margin: 0 auto;
 }
-.color-palettes {
 
-	.palette {
-		padding: 12px;
-		min-width: 200px;
-
-		.swatch {
-			height: 16px;
-			padding: 16px;
-
-			.level {
-				float: right;
-			}
-
-			&.main {
-				height: 138px;
-				border-radius: 12px 12px 0 0;
-			}
-			&.last {
-				border-radius: 0 0 12px 12px;
-			}
-		}
-	}
-}
 
 // Call outs and other shits
 .example {

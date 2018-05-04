@@ -7,4 +7,11 @@ class MainController < ApplicationController
   def typography
 
   end
+
+  def brand 
+
+  end
+  def icons
+
+  end
 end

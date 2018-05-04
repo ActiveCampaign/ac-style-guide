@@ -12,3 +12,29 @@
 	}
 }
 
+
+/*-- Colors /colors --*/
+.color-palettes {
+
+	.palette {
+		padding: 12px;
+		min-width: 200px;
+
+		.swatch {
+			height: 16px;
+			padding: 16px;
+
+			.level {
+				float: right;
+			}
+
+			&.main {
+				height: 138px;
+				border-radius: 12px 12px 0 0;
+			}
+			&.last {
+				border-radius: 0 0 12px 12px;
+			}
+		}
+	}
+}
