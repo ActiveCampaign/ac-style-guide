@@ -307,7 +307,7 @@ html, body {
 }
 header {
 	background-color: color(ocean, 100);
-	padding: 60px;
+	padding: 60px 0;
 }
 footer { 
 margin-top: 60px;
@@ -327,6 +327,7 @@ footer > .display-wrap {
 
 	.palette {
 		padding: 12px;
+		min-width: 200px;
 
 		.swatch {
 			height: 16px;
