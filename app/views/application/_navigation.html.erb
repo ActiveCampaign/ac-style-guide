@@ -2,21 +2,21 @@
 	<div class="display-wrap">
 		<div class="row">
 			<div class="col-xs-4">
-				<%= image_tag("ac-logo-white", width: '258') %>
+				<%= link_to image_tag("ac-logo-white", width: '258'), root_path %>
 			</div>
 			<div class="col-xs">
 				<ul>
-					<li>
-						<%= link_to "Brand", "/brand" %></a>
+					<li class="<%= active_class('/brand') %>">
+						<%= link_to "Brand", "/brand" %>
 					</li>
-					<li>
-						<%= link_to "Typography", "/typography" %></a>
+					<li class="<%= active_class('/typography') %>">
+						<%= link_to "Typography", "/typography" %>
 					</li>
-					<li>
-						<%= link_to "Colors", "/colors" %></a>
+					<li class="<%= active_class('/colors') %>">
+						<%= link_to "Colors", "/colors" %>
 					</li>
-					<li>
-						<%= link_to "Icons", "/icons" %></a>
+					<li class="<%= active_class('/icons') %>">
+						<%= link_to "Icons", "/icons" %>
 					</li>
 				</ul>
 			</div>
