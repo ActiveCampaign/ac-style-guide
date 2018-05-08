@@ -14,3 +14,17 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+// Colors page
+
+$(document).ready(function() {
+	$(".swatch").click(function() {
+		var hex = $(this).data('hex');
+		$("#hex-copy").val(hex);
+		$("#hex-copy").select();
+		document.execCommand("Copy");
+
+	});
+
+}, event);
