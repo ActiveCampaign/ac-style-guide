@@ -8,7 +8,7 @@ class MainController < ApplicationController
 
   end
 
-  def brand 
+  def logo 
 
   end
   def icons

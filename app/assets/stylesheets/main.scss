@@ -214,9 +214,10 @@ $ibm-plex: 'IBM Plex Sans', Helvetica, sans-serif;
 // Hyperlinks
 a, a:visited {
 	color: color(ocean, 100);
+  text-decoration: none;
 }
 a:hover {
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 // Headings
@@ -278,6 +279,14 @@ h6 {
 	line-height: 42px;
 }
 
+// Extended styles
+.lead-in {
+  font-family: $poppins;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 // Modifiers
 .text_color-white {
 	color: white;
@@ -287,6 +296,9 @@ h6 {
 }
 .text_color-lighter {
 	color: color(slate, 80);
+}
+.text_color-lightest {
+  color: color(slate, 60);
 }
 .text_color-ocean--20 {
 	color: color(ocean, 20);
