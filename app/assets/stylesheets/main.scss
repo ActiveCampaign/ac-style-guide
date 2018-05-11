@@ -332,14 +332,14 @@ nav {
 	background-color: color(ocean, 100);
 	margin: 0;
 
-	img {
-		padding-top: 2px;
+	a img {
+		display: block;
 	}
 
 	ul {
 		list-style: none;
 		padding: 0;
-		margin: 4px 0 0 0;
+		margin: 0;
 
 		li {
 			display: inline-block;
@@ -1273,7 +1273,28 @@ footer > .display-wrap {
 
 /*-- Tables --*/
 table {
+  &.style1 {
+    width: 100%;
+    font-size: 16px;
+    border-top: color(slate, 40) 1px solid;
+      td {
+        padding: 12px;
+      }
+      tr:first-of-type {
+        td {
+          padding-top: 16px;
+        }
+      }
+    }
+    &.alternating {
+      tr:nth-child(2) {
 
+          td {
+          background-color: color(slate, 20);
+        }
+
+      }
+    }
 }
 
 /*-- Call outs and other shit --*/
@@ -1315,4 +1336,7 @@ table {
 }
 .no-padding {
 	padding: 0;
+}
+.full-width {
+  width: 100%;
 }

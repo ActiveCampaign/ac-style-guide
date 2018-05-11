@@ -14,4 +14,6 @@ class MainController < ApplicationController
   def icons
 
   end
+  def changes
+  end
 end
