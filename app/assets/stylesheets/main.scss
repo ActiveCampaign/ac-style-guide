@@ -1,4 +1,16 @@
+/*-- Misc Mixins/Functions --*/
 
+
+// Returns padding based on level given
+// Levels are in multiples of 4
+//
+// Usage: go-padding(2);
+// Returns: 8
+@function go-padding($level) {
+  $padding: $level * 4;
+
+  @return $padding + px;
+}
 
 /*-- Colors --*/
 
@@ -74,7 +86,11 @@ $color-palette: (
 	@return $get-color;
 }
 
-// Color classes
+// Color backgrounds
+.bg-bordered {
+  background-color: white;
+  border: color(slate, 40) 1px solid;
+}
 .bg-ocean-20 {
 	background-color: color(ocean, 20);
 }
@@ -305,6 +321,21 @@ h6 {
 }
 .text_color-ocean--40 {
 	color: color(ocean, 40);
+}
+.text_color-ocean--100 {
+  color: color(ocean, 100);
+}
+.text_color-ocean--120 {
+  color: color(ocean, 120);
+}
+.text_color-mint {
+  color: color(mint, 100);
+}
+.text_color-strawberry {
+  color: color(strawberry, 100);
+}
+.all-caps {
+  text-transform: uppercase;
 }
 
 h5 + p {
@@ -1298,17 +1329,25 @@ table {
 }
 
 /*-- Call outs and other shit --*/
-.example {
+.container {
+  width: 100%;
 	display: inline-block;
 	background-color: color(slate, 20);
 	padding: 24px;
 	border-radius: 8px;
+  box-sizing: border-box;
+
+  &.bordered {
+    background-color: transparent;
+    border: color(slate,40) 1px solid;
+  }
 }
 .note {
 	background-color: color(ocean, 40);
 	color: color(ocean, 100);
 	border-radius: 8px;
 	padding: 16px;
+  margin-bottom: 40px;
 }
 
 .global_message {
@@ -1328,15 +1367,83 @@ table {
 /*-- Global Messages --*/
 
 /*-- Utilities --*/
-.no-margin {
-	margin: 0;
-}
-.no-top-margin {
-	margin-top: 0;
-}
-.no-padding {
-	padding: 0;
-}
+
 .full-width {
   width: 100%;
 }
+.float-left {
+  float: left;
+}
+
+// Padding/Margins
+.pr1 {
+  padding-right: go-padding(1);
+}
+.pr2 {
+  padding-right: go-padding(2);
+}
+.pr3 {
+  padding-right: go-padding(3);
+}
+.pr4 {
+  padding-right: go-padding(4);
+}
+.pr5 {
+  padding-right: go-padding(5);
+}
+.pl1 {
+  padding-left: go-padding(1);
+}
+.pl2 {
+  padding-left: go-padding(2);
+}
+.pl3 {
+  padding-left: go-padding(3);
+}
+.pl4 {
+  padding-left: go-padding(4);
+}
+.pl5 {
+  padding-left: go-padding(5);
+}
+.pt1 {
+  padding-top: go-padding(1);
+}
+.pt2 {
+  padding-top: go-padding(2);
+}
+.pt3 {
+  padding-top: go-padding(3);
+}
+.pt4 {
+  padding-top: go-padding(4);
+}
+.pt5 {
+  padding-top: go-padding(5);
+}
+.pb1 {
+  padding-bottom: go-padding(1);
+}
+.pb2 {
+  padding-bottom: go-padding(2);
+}
+.pb3 {
+  padding-bottom: go-padding(3);
+}
+.pb4 {
+  padding-bottom: go-padding(4);
+}
+.pb5 {
+  padding-bottom: go-padding(5);
+}
+
+.no-margin {
+  margin: 0;
+}
+.no-top-margin {
+  margin-top: 0;
+}
+.no-padding {
+  padding: 0;
+}
+
