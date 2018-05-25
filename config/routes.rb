@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get '/logo' => 'main#logo'
   get '/icons' => 'main#icons'
   get '/changes' => 'main#changes'
+   get '/grid' => 'main#grid'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -16,4 +16,6 @@ class MainController < ApplicationController
   end
   def changes
   end
+  def grid
+  end
 end
