@@ -342,6 +342,31 @@ h5 + p {
 	margin-top: -30px;
 }
 
+
+/*-- Buttons / Selectors --*/
+.button {
+  background: color(ocean, 100);
+}
+.button_group {
+  font-weight: 600;
+
+  a {
+    padding: 11px 12px;
+    border-radius: 4px;
+
+    &.active {
+      background-color: color(ocean, 40);
+      color: color(ocean, 120);
+      cursor: default;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
 /*-- Core layout --*/
 html, body {
 	font-family: $ibm-plex;

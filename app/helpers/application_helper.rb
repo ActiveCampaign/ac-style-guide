@@ -1,6 +1,18 @@
 module ApplicationHelper
+	require 'json'
 
-		def active_class(link_path)
-		  current_page?(link_path) ? "active" : ""
-		end
+	# Pull in color library
+	file = File.read('colors.json')
+	$color_hash = JSON.parse(file)
+
+
+	def active_class(link_path)
+	  current_page?(link_path) ? "active" : ""
+	end
+
+	def color(color_name, color_level, mode="Hex")
+		color = $color_hash[color_name][color_level][mode]
+
+		return color
+	end
 end
