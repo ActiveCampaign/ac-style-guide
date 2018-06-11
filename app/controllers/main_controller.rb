@@ -18,4 +18,6 @@ class MainController < ApplicationController
   end
   def grid
   end
+  def library
+  end
 end
