@@ -31,6 +31,7 @@ $(document).ready(function() {
 		$("#hex-copy").val(hex);
 		$("#hex-copy").select();
 		document.execCommand("Copy");
+		console.log('Copied ' + hex + ' to clipboard!');
 
 	});
 
