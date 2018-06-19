@@ -12,6 +12,17 @@
   @return $padding + px;
 }
 
+// Returns margin based on level given
+// Levels are in multiples of 4
+//
+// Usage: go-margin(2);
+// Returns: 8
+@function go-margin($level) {
+  $margin: $level * 4;
+
+  @return $margin + px;
+}
+
 /*-- Colors --*/
 
 // Core color palette
@@ -243,6 +254,11 @@ h1,h2,h3,h4,h5,h6,h7, h8 {
 h1 {
 	font-size: 48px;
 	line-height: 56px;
+
+  &.super {
+    font-size: 60px;
+    line-height: 76px;
+  }
 }
 h2 {
 	font-size: 44px;
@@ -337,15 +353,38 @@ h6 {
 .all-caps {
   text-transform: uppercase;
 }
+.text-center {
+  text-align: center;
+}
 
 h5 + p {
 	margin-top: -30px;
 }
-
+p {
+  -webkit-margin-before: 8px;
+  -webkit-margin-after: 8px;
+}
 
 /*-- Buttons / Selectors --*/
 .button {
+  display: inline-block;
+  font-family: Poppins, sans-serif;
   background: color(ocean, 100);
+  color: #fff !important;
+  font-weight: bold;
+  padding: 11px 12px;
+  border-radius: 4px;
+
+  &:hover {
+    text-decoration: none;
+    background-color: color(ocean, 80);
+  }
+
+  &.large {
+    padding: 18px 12px 17px 12px;
+    font-size: 18px;
+    border-radius: 6px;
+  }
 }
 .button_group {
   font-weight: 600;
@@ -426,6 +465,7 @@ footer > .display-wrap {
 	color: color(slate, 60);
 }
 .display-wrap {
+  position: relative;
 	max-width: 960px;
 	padding: 20px;
 	margin: 0 auto;
@@ -1490,6 +1530,9 @@ table {
 .pt12 {
   padding-top: go-padding(12);
 }
+.pt20 {
+  padding-top: go-padding(20);
+}
 .pb1 {
   padding-bottom: go-padding(1);
 }
@@ -1505,6 +1548,12 @@ table {
 .pb5 {
   padding-bottom: go-padding(5);
 }
+.pb10 {
+  padding-bottom: go-padding(10);
+}
+.mt5 {
+  margin-top: go-margin(5);
+}
 
 .no-margin {
   margin: 0;
@@ -1512,12 +1561,26 @@ table {
 .no-top-margin {
   margin-top: 0;
 }
+.no-bottom-margin {
+  margin-bottom: 0;
+}
 .no-padding {
   padding: 0;
+}
+.no-right-padding {
+  padding-right: 0;
 }
 
 // Images
 img.shadow {
   box-shadow: 0 8px 12px 0 rgba(0,0,0,0.1);
+}
+
+#bubbles {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
 }
 
