@@ -2,6 +2,12 @@
 #home-heading {
 	margin-bottom: 120px;
 }
+.home-bg {
+	background-image: url("home-bg.png");
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: cover;
+}
 #home-get-started {
 	margin-top: -120px;
 }
