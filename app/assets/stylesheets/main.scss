@@ -1452,7 +1452,22 @@ table {
 }
 
 
-/*-- Global Messages --*/
+/*-- Global Messages / Toasts --*/
+.toast {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: color(slate, 80);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 800;
+  padding: 12px 20px;
+  text-align: center;
+  box-shadow: 0 7px 11px 0 rgba(0,0,0,0.09);
+  z-index: 1;
+}
 
 /*-- Utilities and other similar shits --*/
 
@@ -1576,11 +1591,4 @@ img.shadow {
   box-shadow: 0 8px 12px 0 rgba(0,0,0,0.1);
 }
 
-#bubbles {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-}
 

@@ -15,7 +15,7 @@ $(document).ready(function() {
 		$("#hex-copy").select();
 		document.execCommand("Copy");
 		console.log('Copied ' + hex + ' to clipboard!');
-
+		showToast("✅ Color copied to clipboard!");
 	});
 
 	$(".color_toggle a").click(function() {
@@ -174,7 +174,7 @@ $(document).ready(function() {
 					<span class="text_color-white value" data-level="100"><%= color("strawberry", "100") %></span>
 					<span class="text_color-white level">100</span>
 				</div>
-				<div class="swatch bg-strawberry-120" data-hex="<%= color("strawberry", "100") %>">
+				<div class="swatch bg-strawberry-120" data-hex="<%= color("strawberry", "120") %>">
 					<span class="text_color-white value" data-level="120"><%= color("strawberry", "120") %></span>
 					<span class="text_color-white level">120</span>
 				</div>
