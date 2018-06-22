@@ -1590,5 +1590,8 @@ table {
 img.shadow {
   box-shadow: 0 8px 12px 0 rgba(0,0,0,0.1);
 }
+img.light-border {
+  border: color(slate, 40) 1px solid;
+}
 
 
