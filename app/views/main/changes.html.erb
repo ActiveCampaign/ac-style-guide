@@ -6,7 +6,7 @@
 	</div>
 		<% @change_days.each do |day, changes| %>
 		<div class="change--day">
-			<p class="text_size-4"><strong><%= day %></strong></p>
+			<p class="text_size-4"><strong><%= day.strftime("%B %d, %Y") %></strong></p>
 			<table class="style1">
 			<% changes.each do |change| %>
 			
