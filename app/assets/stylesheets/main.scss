@@ -311,6 +311,15 @@ h6 {
 	line-height: 40px;
 }
 
+
+// Lists 
+ul, ol {
+  li {
+    margin-bottom: 12px;
+  }
+}
+
+
 // Extended styles
 .lead-in {
   font-weight: 600;
@@ -409,6 +418,7 @@ p {
 html, body {
 	font-family: $ibm-plex;
 	font-size: 14px;
+  line-height: 20px;
 	font-weight: normal;
 	color: color(slate, 120);
 	margin: 0;
@@ -458,6 +468,7 @@ nav {
 
 		li {
 			display: block;
+      margin-bottom: 0;
 
       &.title {
         font-weight: 600;
@@ -509,12 +520,11 @@ footer {
 	margin: 0 auto;
   max-width: 960px;
 
-  .separator {
-    width: 100%;
-    height: 1px;
-    background-color: color(slate, 40);
-    margin-top: 20px;
-    margin-bottom: 20px;
+  &.separator {
+    border-top: color(slate, 40) 1px solid;
+  }
+  h5:nth-of-type(1) {
+    margin-top: 0;
   }
 }
 
