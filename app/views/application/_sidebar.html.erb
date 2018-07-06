@@ -1,0 +1,23 @@
+<nav>
+	<div class="logo">
+		<a href="/" title="Return home">
+			<%= image_tag "sidebar-logo.png" %>
+		</a>
+	</div>
+	<ul>
+		<li class="title">Getting Started</li>
+		<li class="<%= active_class('/changes') %>"><%= link_to "What's New?", "/changes" %></li>
+	</ul>
+	<ul>
+		<li class="title">Brand</li>
+		<li class="<%= active_class('/logo') %>"><%= link_to "Logo", "/logo" %></li>
+		<li class="<%= active_class('/typography') %>"><%= link_to "Typography", "/typography" %></li>
+		<li class="<%= active_class('/colors') %>"><%= link_to "Colors", "/colors" %></li>
+		<li class="<%= active_class('/library') %>"><%= link_to "Library", "/library" %></li>
+		<li class="<%= active_class('/grid') %>"><%= link_to "Grid", "/grid" %></li>
+	</ul>
+	<ul>
+		<li class="title">Resources</li>
+		<li class="<%= active_class('/email-signature') %>"><%= link_to "Email Signatures", "/email-signature" %></li>
+	</ul>
+</nav>

@@ -10,8 +10,15 @@
 </head>
 <body>
 	<!--<%= render "globalmessage" %>-->
-	<%= render "navigation" %>
-	<%= yield %>
-	<%= render "footer" %>
+  <div class="row">
+    <div class="col-lg-2 sidebar">
+      <%= render "sidebar" %>
+    </div>
+    <div class="col-sm no-padding">
+      <%= yield %>
+      <%= render "footer" %>
+    </div>
+  </div>
+	
 </body>
 </html>

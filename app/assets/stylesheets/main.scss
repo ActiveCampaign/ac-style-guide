@@ -313,8 +313,7 @@ h6 {
 
 // Extended styles
 .lead-in {
-  font-family: $poppins;
-  font-weight: bold;
+  font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -418,57 +417,97 @@ html, body {
 }
 header {
 	background-color: color(ocean, 100);
-	padding: 20px 0 60px 0;
+	padding: 32px 0 32px 0;
+
+  h1 {
+    margin-top: 0;
+  }
 }
 footer { 
 	margin-top: 60px;
 }
-nav {
-	background-color: color(ocean, 100);
-	margin: 0;
+.sidebar {
+  min-width: 300px !important;
+  max-width: 300px !important;
+  border-right: color(ocean, 40) 1px solid;
+}
 
-	a img {
+nav {
+	background-color: #fff;
+	margin: 0;
+  padding: 24px;
+  width: 224px;
+  position: fixed;
+
+	.logo {
 		display: block;
+    width: 100%;
+    margin: 10px 0 40px 0;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 56px;
+    }
 	}
 
 	ul {
 		list-style: none;
 		padding: 0;
-		margin: 0;
+		margin: 0 0 24px 0;
 
 		li {
-			display: inline-block;
-			margin-right: 6%;
+			display: block;
+
+      &.title {
+        font-weight: 600;
+        letter-spacing: 0.74px;
+        text-transform: uppercase;
+        font-size: 13px;
+        color: color(slate, 80);
+        margin-bottom: 8px;
+      }
 
 			a, a:visited {
-				color: #fff;
-				font-weight: 800;
+        display: inline-block;
+				font-weight: 600;
 				font-size: 16px;
 				text-decoration: none;
-				opacity: .7;
+        padding: 6px 8px;
+        border-radius: 4px;
+        margin-bottom: 4px;
 
 				&:hover {
-					opacity: 1;
+	
 				}
 			}
 
-			&.active a, a:visited {
-				opacity: 1;
+			&.active a {
+				background-color: color(ocean, 40);
+
+        &:hover {
+          text-decoration: none;
+          cursor: default;
+        }
 			}
 		}
 	}
 }
-footer > .display-wrap {
+footer {
 	border-top: color(slate, 20) 1px solid;
-	padding-top: 40px;
-	padding-bottom: 40px;
+	
 	color: color(slate, 60);
+
+  .display-wrap {
+    padding-top: 28px;
+    padding-bottom: 20px;
+  }
 }
 .display-wrap {
   position: relative;
-	max-width: 960px;
-	padding: 20px;
+	padding: 64px;
 	margin: 0 auto;
+  max-width: 960px;
 
   .separator {
     width: 100%;
@@ -477,46 +516,6 @@ footer > .display-wrap {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-}
-
-// Side nav
-.side-nav {
-  position: fixed;
-  left: 0;
-  top: 560px;
-
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-    li {
-      margin-bottom: 24px;
-      font-size: 16px;
-      padding-left: 80px;
-
-      a {
-        position: relative; 
-
-        &:before {
-          content: '';
-          width: 64px;
-          height: 4px;
-          background: color(ocean, 40);
-          position: absolute;
-          left: -80px;
-          top: 8px;
-        }
-
-        &.current {
-          &:before {
-            background: color(ocean, 100);
-          }
-        }
-      }
-    }
-  }
-
 }
 
 

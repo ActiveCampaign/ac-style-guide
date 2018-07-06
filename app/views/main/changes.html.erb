@@ -1,9 +1,12 @@
-<div class="display-wrap">
-	<div class="row">
-		<div class="col-xs-12">
-			<h5>📝 What's New?</h5>
-		</div>
+<header>
+	<div class="display-wrap">
+		<div class="row">
+			<div class="col-xs">
+				<h1 class="text_color-white">📝 What's New</h1>
+			</div>
 	</div>
+</header>
+<div class="display-wrap">
 		<% @change_days.each do |day, changes| %>
 		<div class="change--day">
 			<p class="text_size-4"><strong><%= day.strftime("%B %d, %Y") %></strong></p>
