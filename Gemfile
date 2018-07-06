@@ -28,6 +28,9 @@ gem 'json'
 
 gem 'activeadmin'
 gem 'devise'
+gem 'rouge'
+gem 'pygments.rb'
+gem 'redcarpet'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

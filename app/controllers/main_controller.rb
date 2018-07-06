@@ -23,4 +23,6 @@ class MainController < ApplicationController
   end
   def library
   end
+  def email_signature 
+  end
 end

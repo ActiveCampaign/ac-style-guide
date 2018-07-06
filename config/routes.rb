@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get '/changes' => 'main#changes'
   get '/grid' => 'main#grid'
   get '/library' => 'main#library'
+  get '/email-signature' => 'main#email_signature'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
