@@ -8,7 +8,7 @@ class MainController < ApplicationController
 
   end
   def glossary
-    @terms = Glossary.all.order('name DESC')
+    @terms = Glossary.all.order('name ASC')
   end
 
   def logo 
