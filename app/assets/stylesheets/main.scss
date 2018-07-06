@@ -427,8 +427,8 @@ footer {
 	margin-top: 60px;
 }
 .sidebar {
-  min-width: 300px !important;
-  max-width: 300px !important;
+  min-width: 280px !important;
+  max-width: 280px !important;
   border-right: color(ocean, 40) 1px solid;
 }
 
@@ -436,7 +436,7 @@ nav {
 	background-color: #fff;
 	margin: 0;
   padding: 24px;
-  width: 224px;
+  width: 216px;
   position: fixed;
 
 	.logo {
@@ -552,6 +552,9 @@ footer {
 
   &.spacing-large {
     margin-bottom: 64px;
+  }
+  &.no-wrap {
+    flex-wrap: nowrap;
   }
 }
 
