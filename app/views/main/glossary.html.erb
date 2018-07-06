@@ -1,0 +1,31 @@
+<header>
+	<div class="display-wrap">
+		<div class="row">
+			<div class="col-xs">
+				<h1 class="text_color-white">Glossary</h1>
+				<p class="text_size-5 text_color-ocean--40">
+					The ActiveCampaign Glossary is a list of all terms used throughout our marketing material, products, support and internally through tasks and stories. 
+				</p>
+			</div>
+	</div>
+</header>
+<section>
+	<div class="display-wrap">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="callout note">
+					<strong>Note:</strong> If a term should be capitalized in a support document, blog post, support ticket, or when referred to in the interface itself it should be capitalized here. If it is not capitalized, it should not be.
+				</div>
+				<div class="text_size-3">
+					<table class="style1">
+						<% @terms.each do |term| %>
+							<tr>
+								<td><strong><%= term.name %></strong> - <%= term.description %></td>
+							</tr>
+						<% end %>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

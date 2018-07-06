@@ -7,6 +7,9 @@ class MainController < ApplicationController
   def typography
 
   end
+  def glossary
+    @terms = Glossary.all.order('name DESC')
+  end
 
   def logo 
 
