@@ -1,28 +1,13 @@
-== README
+ActiveCampaign Style Guide
+=======================================
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The ActiveCampaign Style Guide houses all of our internal style and design information. It is a portal to give insight into how to design within the organization and how to create a consistent brand presence.
 
-Things you may want to cover:
+### TO DO
 
-* Ruby version
+- Illustration / iconography reference and guide
+- Page sectional navigation
 
-* System dependencies
+### Contribution
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+- At this time there is no available contribution as we continue to build this site out. If you would like to clone the repo locally and have it available, you may do so.
