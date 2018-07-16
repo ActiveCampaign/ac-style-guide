@@ -537,6 +537,42 @@ footer {
   }
 }
 
+// Sectional nav
+.section-nav {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: color(ocean, 40) 1px solid;
+
+  .nav-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 64px;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        font-weight: 600;
+        margin: 0 48px 0 0;
+
+        a {
+          display: block;
+          padding: 18px 0 18px 0;
+        }
+      }
+    }
+  }
+  &.sticky {
+    top: 0;
+    position: fixed;
+    width: calc(100% - 252px);
+    z-index: 5;
+
+  }
+}
 
 // Dat Grid be Tight
 // Grid

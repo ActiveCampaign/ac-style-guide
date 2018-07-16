@@ -57,7 +57,8 @@ $(document).ready(function() {
 			</div>
 	</div>
 </header>
-<section>
+<%= render "sectionnav" %>
+<section id="primary-palette">
 	<div class="display-wrap">
 		<div class="row middle-xs">
 			<div class="col-sm-9 col-xs-12">
@@ -156,6 +157,8 @@ $(document).ready(function() {
 			<div class="palette col-xs">&nbsp;</div>
 		</div>
 	</div>
+</section>
+<section id="secondary-palette">
 	<div class="display-wrap">
 		<div class="row middle-xs">
 			<div class="col-sm-9 col-xs-12">
@@ -281,7 +284,7 @@ $(document).ready(function() {
 		</div>
 	</div>
 </section>
-<section>
+<section id="accessibility">
 	<div class="display-wrap separator">
 		<h5>Accessibility</h5>
 		<div class="callout note"><strong>Note</strong> To maintain web accessibility, the minimum contrast ratio for text and background colors should be 4.5:1 / WCAG AA level.</div>
