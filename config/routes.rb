@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get '/library' => 'main#library'
   get '/email-signature' => 'main#email_signature'
   get '/glossary' => 'main#glossary'
+  get '/illustrations' => 'main#illustrations'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

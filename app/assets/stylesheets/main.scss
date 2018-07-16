@@ -317,6 +317,15 @@ ul, ol {
   li {
     margin-bottom: 12px;
   }
+
+  &.style-medium {
+    margin-left: 0;
+    padding-left: 16px;
+
+    li {
+      font-size: 16px;
+    }
+  }
 }
 
 

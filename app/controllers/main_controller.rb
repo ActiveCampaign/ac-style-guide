@@ -28,4 +28,6 @@ class MainController < ApplicationController
   end
   def email_signature 
   end
+  def illustrations
+  end
 end
