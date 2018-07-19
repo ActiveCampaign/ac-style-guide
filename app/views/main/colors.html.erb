@@ -40,6 +40,15 @@ $(document).ready(function() {
 		return false;
 	});
 
+	$(".color-usage--colors li").click(function() {
+		var color = $(this).attr('id');
+		$(".color-usage--colors li").removeClass('active');
+		$(this).addClass('active');
+		
+		$("#color-usage--guide .content").removeClass('visible');
+		$("#color-usage--guide .content." + color).addClass('visible');
+	});
+
 
 
 }, event);
@@ -528,4 +537,162 @@ $(document).ready(function() {
 		</div>
 		</div>
 </section>
-
+<section id="usage">
+	<div class="display-wrap separator">
+		<h5>Usage</h5>
+		<p class="text_size-4 pb10">
+			Color usage throughout our product depends on the application. Select a color below in the the helpful guide to see how each color can be used in various mediums throughout our products. 
+		</p>
+		<div class="row pb5">
+			<div class="col-xs-12">
+				<ul class="color-usage--colors">
+					<li id="ocean" class="active"></li>
+					<li id="strawberry"></li>
+					<li id="lavender"></li>
+					<li id="mint"></li>
+					<li id="creamsicle"></li>
+					<li id="banana"></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="container bordered" id="color-usage--guide">
+					<div class="content ocean visible">
+						<p class="text_size-4"><strong>How to use Ocean</strong></p>
+						<p class="text_size-3">Ocean is our primary color and is used mostly for primary actions as well as for primary focal elements throughout our marketing material and products. </p>
+						<div class="row pt5">
+							<div class="example-block col-sm-4">
+								<%= image_tag "color-usage-ocean-1", width: "282" %>
+								<p class="text_size-2 text_color-light">Primary action buttons</p>
+							</div>
+							<div class="example-block col-sm-4">
+								<%= image_tag "color-usage-ocean-2", width: "282" %>
+								<p class="text_size-2 text_color-light">Information blocks and notices</p>
+							</div>
+							<div class="example-block col-sm-4 last">
+								<%= image_tag "color-usage-ocean-3", width: "282" %>
+								<p class="text_size-2 text_color-light">Text links</p>
+							</div>
+						</div>
+						<div class="row pt5">
+							<div class="example-block col-sm-4">
+								<%= image_tag "color-usage-ocean-4", width: "282" %>
+								<p class="text_size-2 text_color-light">Pills, tags and chips</p>
+							</div>
+							<div class="example-block col-sm-4">
+								<%= image_tag "color-usage-ocean-5", width: "282" %>
+								<p class="text_size-2 text_color-light">Form element active states</p>
+							</div>
+						</div>
+					</div>
+					<div class="content strawberry">
+						<p class="text_size-4"><strong>How to use Strawberry</strong></p>
+						<p class="text_size-3">Strawberry plays an important role in providing visual feedback on destructive actions or items that require more attention or completion of the highest priority. </p>
+						<div class="row pt5">
+							<div class="example-block col-sm-4">
+								<%= image_tag "color-usage-strawberry-1", width: "282" %>
+								<p class="text_size-2 text_color-light">Destructive action buttons</p>
+							</div>
+							<div class="example-block col-sm-4">
+								<%= image_tag "color-usage-strawberry-2", width: "282" %>
+								<p class="text_size-2 text_color-light">Error blocks and notices</p>
+							</div>
+							<div class="example-block col-sm-4 last">
+								<%= image_tag "color-usage-strawberry-3", width: "282" %>
+								<p class="text_size-2 text_color-light">Chips that provide negative feedback</p>
+							</div>
+						</div>
+						<div class="row pt5">
+							<div class="example-block col-sm-4">
+								<%= image_tag "color-usage-strawberry-4", width: "282" %>
+								<p class="text_size-2 text_color-light">Form element error states</p>
+							</div>
+							<div class="example-block col-sm-4">
+								<%= image_tag "color-usage-strawberry-5", width: "282" %>
+								<p class="text_size-2 text_color-light">Negative trends</p>
+							</div>
+						</div>
+					</div>
+					<div class="content lavender">
+						<p class="text_size-4"><strong>How to use Lavender</strong></p>
+						<p class="text_size-3">Lavender is used primarily as an accent color and provides no overall meaning. Use Lavender to accent elements like charts, or gems or other elements.  </p>
+						<div class="row pt5">
+							<div class="example-block col-sm-4">
+								<%= image_tag "color-usage-lavender-1", width: "282" %>
+								<p class="text_size-2 text_color-light">Gems and accent elements</p>
+							</div>
+							<div class="example-block col-sm-4">
+								<%= image_tag "color-usage-lavender-2", width: "282" %>
+								<p class="text_size-2 text_color-light">Accent for charts</p>
+							</div>	
+						</div>
+					</div>
+					<div class="content mint">
+						<p class="text_size-4"><strong>How to use Mint</strong></p>
+						<p class="text_size-3">Mint is used throughout our products as our main secondary color to compliment our blues. It is also used as a positive reinforcing color on things like success messages and validated form fields.</p>
+						<div class="row pt5">
+							<div class="example-block col-sm-4">
+								<%= image_tag "color-usage-mint-1", width: "282" %>
+								<p class="text_size-2 text_color-light">Success messages and notifications</p>
+							</div>
+							<div class="example-block col-sm-4">
+								<%= image_tag "color-usage-mint-2", width: "282" %>
+								<p class="text_size-2 text_color-light">Positive trends</p>
+							</div>
+							<div class="example-block col-sm-4 last">
+								<%= image_tag "color-usage-mint-3", width: "282" %>
+								<p class="text_size-2 text_color-light">Chips that provide positive feedback</p>
+							</div>
+						</div>
+						<div class="row pt5">
+							<div class="example-block col-sm-4">
+								<%= image_tag "color-usage-mint-4", width: "282" %>
+								<p class="text_size-2 text_color-light">Form element validation states</p>
+							</div>
+							<div class="example-block col-sm-4">
+								<%= image_tag "color-usage-mint-5", width: "282" %>
+								<p class="text_size-2 text_color-light">Mint as accent for charts</p>
+							</div>
+							<div class="example-block col-sm-4 last">
+								<%= image_tag "color-usage-mint-6", width: "282" %>
+								<p class="text_size-2 text_color-light">Gems and accent elements</p>
+							</div>
+						</div>
+					</div>
+					<div class="content creamsicle">
+						<p class="text_size-4"><strong>How to use Creamsicle</strong></p>
+						<p class="text_size-3">Creamsicle is used primarily as an accent color and provides no overall meaning. Use Creamsicle to accent elements like charts, or gems or other elements.  </p>
+						<div class="row pt5">
+							<div class="example-block col-sm-4">
+								<%= image_tag "color-usage-creamsicle-1", width: "282" %>
+								<p class="text_size-2 text_color-light">Gems and accent elements</p>
+							</div>
+							<div class="example-block col-sm-4">
+								<%= image_tag "color-usage-creamsicle-2", width: "282" %>
+								<p class="text_size-2 text_color-light">Accent for charts</p>
+							</div>	
+						</div>
+					</div>
+					<div class="content banana">
+						<p class="text_size-4"><strong>How to use Banana</strong></p>
+						<p class="text_size-3">Banana is used primarily to display caution or to draw attention to elements that require more information but are low priority. </p>
+						<div class="row pt5">
+							<div class="example-block col-sm-4">
+								<%= image_tag "color-usage-banana-1", width: "282" %>
+								<p class="text_size-2 text_color-light">Warning messages and notifications</p>
+							</div>
+							<div class="example-block col-sm-4">
+								<%= image_tag "color-usage-banana-2", width: "282" %>
+								<p class="text_size-2 text_color-light">Chips that provide cautious feedback</p>
+							</div>
+							<div class="example-block col-sm-4">
+								<%= image_tag "color-usage-banana-3", width: "282" %>
+								<p class="text_size-2 text_color-light">Accent for charts</p>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+</section>
