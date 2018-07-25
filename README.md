@@ -3,11 +3,40 @@ ActiveCampaign Style Guide
 
 The ActiveCampaign Style Guide houses all of our internal style and design information. It is a portal to give insight into how to design within the organization and how to create a consistent brand presence.
 
-### TO DO
+## TO DO
 
-- Illustration / iconography reference and guide
-- Page sectional navigation
+- Marketing site patterns guide
 
-### Contribution
+## Install
 
-- At this time there is no available contribution as we continue to build this site out. If you would like to clone the repo locally and have it available, you may do so.
+Use [RVM](https://rvm.io) to install Ruby (``~v2.2.1``) on your machine if you have not done so already. This will allow easy management of your Ruby installs.
+
+``rvm list``
+
+Should show something along the following lines...
+
+```
+rvm rubies
+
+=* ruby-2.2.1 [ x86_64 ]
+
+# => - current
+# =* - current && default
+#  * - default
+```
+
+In the directory where the style guide is...
+
+``bundle install``
+
+Run db migration
+
+``rake db:migrate``
+
+Launch site
+
+``rails s``
+
+## Deployment
+
+Create a pull request (into ``master``) from your fork with your changes.
