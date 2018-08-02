@@ -7,9 +7,6 @@ class MainController < ApplicationController
   def typography
 
   end
-  def glossary
-    @terms = Glossary.all.order('name ASC')
-  end
 
   def logo 
 
@@ -25,8 +22,6 @@ class MainController < ApplicationController
   def grid
   end
   def library
-  end
-  def email_signature 
   end
   def illustrations
   end

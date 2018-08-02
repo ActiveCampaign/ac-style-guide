@@ -1,20 +1,36 @@
 Rails.application.routes.draw do
   
-
+  # ActiveAdmin Shit
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  root 'main#home'
 
-  get '/typography' => 'main#typography'
-  get '/colors' => 'main#colors'
-  get '/logo' => 'main#logo'
-  get '/icons' => 'main#icons'
+  # Global
+  root 'main#home'
   get '/changes' => 'main#changes'
+
+  # Brand Pages
+  get '/typography' => 'main#typography'
+  get '/brand/typography' => 'brand#typography'
+  get '/colors' => 'main#colors'
+  get '/brand/colors' => 'brand#colors'
+  get '/logo' => 'main#logo'
+  get '/brand/logo' => 'brand#logo'
+  get '/icons' => 'main#icons'
+  get '/brand/icons' => 'brand#icons'
   get '/grid' => 'main#grid'
+  get '/brand/grid' => 'brand#grid'
   get '/library' => 'main#library'
-  get '/email-signature' => 'main#email_signature'
-  get '/glossary' => 'main#glossary'
+  get '/brand/library' => 'brand#library'
   get '/illustrations' => 'main#illustrations'
+  get '/brand/illustrations' => 'brand#illustrations'
+
+  # Marketing Pages
+  get '/marketing/webpatterns' => 'marketing#webpatterns'
+
+  # Resources Pages
+  get '/email-signature' => 'resources#email_signature'
+  get '/resources/email-signature' => 'resources#email_signature'
+  get '/resources/glossary' => 'resources#glossary'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
