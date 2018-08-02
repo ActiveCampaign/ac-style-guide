@@ -37,6 +37,10 @@ $ibm-plex: 'IBM Plex Sans', Helvetica, sans-serif;
 a, a:visited {
 	color: color(ocean, 100);
   text-decoration: none;
+
+  &.cta {
+    font-weight: 500;
+  }
 }
 a:hover {
 	text-decoration: underline;
@@ -177,13 +181,18 @@ ul, ol {
 .text_family-poppins {
   font-family: $poppins;
 }
-
+h4 + p {
+  margin-top: -30px;
+}
 h5 + p {
 	margin-top: -30px;
 }
 p {
   -webkit-margin-before: 8px;
   -webkit-margin-after: 8px;
+}
+.lead-in + h4 {
+  margin-top: 12px;
 }
 
 /*-- Buttons / Selectors --*/
@@ -1331,13 +1340,50 @@ table {
   }
 }
 
+/*-- Annotations --*/
+
+.annotation {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 100%;
+  text-align: center;
+  color: #fff;
+  background-color: color(strawberry, 100);
+
+  &.right {
+    &:before {
+      width: 30px;
+      height: 2px;
+      background-color: color(strawberry, 100);
+      position: absolute;
+      content: " ";
+      left: -34px;
+      top: 9px;
+    }
+  }
+  &.left {
+    &:after {
+      width: 30px;
+      height: 2px;
+      background-color: color(strawberry, 100);
+      position: absolute;
+      content: " ";
+      right: -34px;
+      top: 9px;
+    }
+  }
+}
+
 /*-- Call outs and other shit --*/
 .container {
   width: 100%;
 	display: inline-block;
 	background-color: color(slate, 20);
 	padding: 24px;
-	border-radius: 16px;
+	border-radius: 10px;
   box-sizing: border-box;
 
   &.bordered {
@@ -1350,6 +1396,10 @@ table {
   &.red-top {
     border-top: color(strawberry, 100) 16px solid;
   }
+  &.padding-large {
+    padding: 40px;
+  }
+
 }
 .note {
 	background-color: color(ocean, 40);
