@@ -1,115 +1,35 @@
 /*-- Imports --*/
 @import "colors";
 
-/*-- Misc Mixins/Functions --*/
+// Typography
 
-
-// Returns padding based on level given
-// Levels are in multiples of 4
-//
-// Usage: go-padding(2);
-// Returns: 8
-@function go-padding($level) {
-  $padding: $level * 4;
-
-  @return $padding + px;
-}
-
-// Returns margin based on level given
-// Levels are in multiples of 4
-//
-// Usage: go-margin(2);
-// Returns: 8
-@function go-margin($level) {
-  $margin: $level * 4;
-
-  @return $margin + px;
-}
-
-
-/*-- Typography --*/
-
-// Core typefaces
-$poppins: 'Poppins', Helvetica, sans-serif;
-$ibm-plex: 'IBM Plex Sans', Helvetica, sans-serif;
-
-// Hyperlinks
-a, a:visited {
-	color: color(ocean, 100);
-  text-decoration: none;
-
-  &.cta {
-    font-weight: 500;
-  }
-}
-a:hover {
-	text-decoration: underline;
-}
-
-// Headings
-h1,h2,h3,h4,h5,h6,h7, h8 {
-	font-family: $poppins;
-}
 h1 {
-	font-size: 48px;
-	line-height: 56px;
-
-  &.super {
-    font-size: 60px;
-    line-height: 76px;
-  }
+  @include title-6;
 }
 h2 {
-	font-size: 44px;
-	line-height: 52px;
+  @include title-5;
 }
 h3 {
-	font-size: 40px;
-	line-height: 48px;
+  @include title-4;
 }
 h4 {
-	font-size: 36px;
-	line-height: 44px;
+  @include title-3;
 }
 h5 {
-	font-size: 32px;
-	line-height: 40px;
+  @include title-2;
 }
 h6 {
-	font-size: 28px;
-	line-height: 36px;
+  @include title-1;
 }
 
-// Body / Paragraph
-.text_size-1 {
-	font-size: 12px;
-	line-height: 16px;
-}
-.text_size-2 {
-	font-size: 14px;
-	line-height: 20px;
-}
-.text_size-3 {
-	font-size: 16px;
-	line-height: 24px;
-}
-.text_size-4 {
-	font-size: 18px;
-	line-height: 28px;
-}
-.text_size-5 {
-	font-size: 20px;
-	line-height: 32px;
-}
-.text_size-6 {
-	font-size: 24px;
-	line-height: 36px;
-}
-.text_size-7 {
-	font-size: 28px;
-	line-height: 40px;
-}
 
+a:link, a:hover, a:visited {
+  color: color(ocean, 100);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 
 // Lists 
 ul, ol {
@@ -135,52 +55,6 @@ ul, ol {
   text-transform: uppercase;
 }
 
-// Modifiers
-.text_color-white {
-	color: white;
-}
-.text_color-light {
-	color: color(slate, 100);
-}
-.text_color-lighter {
-	color: color(slate, 80);
-}
-.text_color-lightest {
-  color: color(slate, 60);
-}
-.text_color-ocean--20 {
-	color: color(ocean, 20);
-}
-.text_color-ocean--40 {
-	color: color(ocean, 40);
-}
-.text_color-ocean--100 {
-  color: color(ocean, 100);
-}
-.text_color-ocean--120 {
-  color: color(ocean, 120);
-}
-.text_color-mint {
-  color: color(mint, 100);
-}
-.text_color-strawberry {
-  color: color(strawberry, 100);
-}
-.all-caps {
-  text-transform: uppercase;
-}
-.text-center {
-  text-align: center;
-}
-.text_weight-medium {
-  font-weight: 500;
-}
-.text_weight-bold {
-  font-weight: 700;
-}
-.text_family-poppins {
-  font-family: $poppins;
-}
 h4 + p {
   margin-top: -30px;
 }
@@ -195,27 +69,7 @@ p {
   margin-top: 12px;
 }
 
-/*-- Buttons / Selectors --*/
-.button {
-  display: inline-block;
-  font-family: Poppins, sans-serif;
-  background: color(ocean, 100);
-  color: #fff !important;
-  font-weight: bold;
-  padding: 11px 12px;
-  border-radius: 4px;
 
-  &:hover {
-    text-decoration: none;
-    background-color: color(ocean, 80);
-  }
-
-  &.large {
-    padding: 18px 16px 17px 16px;
-    font-size: 18px;
-    border-radius: 6px;
-  }
-}
 .button_group {
   font-weight: 600;
 
@@ -238,7 +92,7 @@ p {
 
 /*-- Core layout --*/
 html, body {
-	font-family: $ibm-plex;
+	font-family: $body;
 	font-size: 14px;
   line-height: 20px;
 	font-weight: normal;
