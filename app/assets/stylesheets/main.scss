@@ -109,7 +109,8 @@ footer {
 	margin-top: 60px;
 }
 .sidebar {
-  min-width: 265px !important;
+  position: relative;
+  min-width: 220px !important;
   //max-width: 316px !important;
   border-right: color(ocean, 40) 1px solid;
   z-index: 6;
@@ -119,11 +120,11 @@ footer {
 nav {
 	margin: 0;
   padding: 24px;
-  width: 216px;
   position: fixed;
   top: 0;
   bottom:0;
   overflow-y: auto;
+  left: 0;
 
 	.logo {
 		display: block;
