@@ -10,11 +10,11 @@
 </head>
 <body>
 	<!--<%= render "globalmessage" %>-->
-  <div class="row no-wrap">
-    <div class="col-lg-2 sidebar">
+  <div class="grid g-cols">
+    <div class="l--g-col-2 sidebar">
       <%= render "sidebar" %>
     </div>
-    <div class="col-sm no-padding">
+    <div class="l--g-col-10">
       <%= yield %>
       <%= render "footer" %>
     </div>

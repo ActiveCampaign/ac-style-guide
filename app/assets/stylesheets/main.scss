@@ -100,6 +100,7 @@ html, body {
 	margin: 0;
 	padding: 0;
 	-webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 header {
 	background-color: color(ocean, 100);
@@ -113,8 +114,8 @@ footer {
 	margin-top: 60px;
 }
 .sidebar {
-  min-width: 280px !important;
-  max-width: 280px !important;
+  min-width: 265px !important;
+  //max-width: 316px !important;
   border-right: color(ocean, 40) 1px solid;
 }
 
@@ -146,7 +147,7 @@ nav {
 			display: block;
       margin-bottom: 0;
 
-      &.title {
+      &.section-heading {
         font-weight: 600;
         letter-spacing: 0.74px;
         text-transform: uppercase;

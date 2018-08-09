@@ -1,15 +1,15 @@
 <header>
 	<div class="display-wrap">
-		<div class="row">
-			<div class="col-xs">
-				<h1 class="text_color-white">📝 What's New</h1>
+		<div class="grid g-cols">
+			<div class="g-col-12">
+				<h1 class="white">📝 What's New</h1>
 			</div>
 	</div>
 </header>
 <div class="display-wrap">
 		<% @change_days.each do |day, changes| %>
 		<div class="change--day">
-			<p class="text_size-4"><strong><%= day.strftime("%B %d, %Y") %></strong></p>
+			<p class="l--fs-6"><strong><%= day.strftime("%B %d, %Y") %></strong></p>
 			<table class="style1">
 			<% changes.each do |change| %>
 			
