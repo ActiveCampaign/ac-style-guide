@@ -35,9 +35,6 @@ a:hover {
 ul, ol {
   padding-left: 0;
 
-  li {
-    margin-bottom: 12px;
-  }
 
   &.style-medium {
     margin-left: 0;
@@ -91,6 +88,9 @@ p {
 html, body {
 	-webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  color: $slate-120;
+  font-size: $font-size-3;
+  line-height: $line-height-3;
 }
 header {
 	background-color: color(ocean, 100);
@@ -116,6 +116,9 @@ nav {
   padding: 24px;
   width: 216px;
   position: fixed;
+  top: 0;
+  bottom:0;
+  overflow-y: auto;
 
 	.logo {
 		display: block;
@@ -136,7 +139,6 @@ nav {
 
 		li {
 			display: block;
-      margin-bottom: 0;
 
       &.section-heading {
         font-weight: 600;
