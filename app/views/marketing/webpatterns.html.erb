@@ -1,9 +1,9 @@
 <header>
 	<div class="display-wrap">
-		<div class="row">
-			<div class="col-xs">
-				<h1 class="text_color-white">Web Patterns</h1>
-				<p class="text_size-5 text_color-ocean--40">
+		<div class="grid g-cols">
+			<div class="g-col-12">
+				<h1 class="white">Web Patterns</h1>
+				<p class="body l--fs-7 lh-8 ocean-40">
 					Our web patterns are commonly used elements and components throughout our marketing website. They provide guidance and rules for how and where to use each pattern specifically.
 				</p>
 			</div>
@@ -12,75 +12,85 @@
 <%= render "sectionnav" %>
 <section id="introduction">
 	<div class="display-wrap">
-		<div class="row">
-			<div class="col-xs">
+		<div class="grid g-cols">
+			<div class="g-col-12">
 				<h5>Introduction</h5>
-					<p class="text_size-4 pb5">
+					<p class="body l--fs-6 lh-5 pb-5">
 						When creating a new page, updating or expanding on an existing page it is always recommended to insure that you understand all of our patterns. These guidelines insure each pattern is used properly and provides a consistent experience across our marketing site.
 					</p>
 				</div>
 		</div>
-		<div class="row pb5">
-			<div class="col-xs-12">
-				<p class="text_size-6"><strong>Categories</strong></p>
+		<div class="grid g-cols pb-5">
+			<div class="g-col-12">
+				<p class="body l--fs-7 lh-6"><strong>Categories</strong></p>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-sm-5 col-xs-12">
+		<div class="grid g-cols gap-l">
+			<div class="g-col-12 l--g-col-5">
 				<%= image_tag "web-cat1", width: "386" %>
-				<p class="text_size-4 pt2"><a href="#layout"><strong>Layout</strong></a></p>
-				<p class="text_size-3">How each page is laid out and the different styles you can use for each page. This includes grids, sections and heros.</p>
+				<p class="body l--fs-6 lh-6 pt-2"><a href="#layout"><strong>Layout</strong></a></p>
+				<p class="body l--fs-4 lh-4">How each page is laid out and the different styles you can use for each page. This includes grids, sections and heros.</p>
 			</div>
-			<div class="col-sm-2 col-xs-12">&nbsp;</div>
-			<div class="col-sm-5 col-xs-12">
+			<div class="g-col-12 l--g-col-2">&nbsp;</div>
+			<div class="g-col-12 l--g-col-5">
 				<%= image_tag "web-cat2", width: "386" %>
-				<p class="text_size-4 pt2"><a href="#controls"><strong>Controls</strong></a></p>
-				<p class="text_size-3">Describes each actionable control for our pages, their styles, how they are used and where they are used.</p>
+				<p class="body l--fs-6 lh-6 pt-2"><a href="#controls"><strong>Controls</strong></a></p>
+				<p class="body l--fs-4 lh-4">Describes each actionable control for our pages, their styles, how they are used and where they are used.</p>
 			</div>
 		</div>
-		<div class="row pt6">
-			<div class="col-sm-5 col-xs-12">
+		<div class="grid g-cols gap-l pt-10">
+			<div class="g-col-12 l--g-col-5">
 				<%= image_tag "web-cat3", width: "386" %>
-				<p class="text_size-4 pt2"><a href="#content-blocks"><strong>Content Blocks</strong></a></p>
-				<p class="text_size-3">Cards, media blocks and specific blocks that are used to contain different types of content.</p>
+				<p class="body l--fs-6 lh-6 pt-2"><a href="#content-blocks"><strong>Content Blocks</strong></a></p>
+				<p class="body l--fs-4 lh-4">Cards, media blocks and specific blocks that are used to contain different types of content.</p>
 			</div>
-			<div class="col-sm-2 col-xs-12">&nbsp;</div>
-			<div class="col-sm-5 col-xs-12">
+			<div class="g-col-12 l--g-col-2">&nbsp;</div>
+			<div class="g-col-12 l--g-col-5">
 				<%= image_tag "web-cat4", width: "386" %>
-				<p class="text_size-4 pt2"><a href="#images-and-media"><strong>Images &amp; Media</strong></a></p>
-				<p class="text_size-3">How images and media types like video are shown throughout the site.</p>
+				<p class="body l--fs-6 lh-6 pt-2"><a href="#images-and-media"><strong>Images &amp; Media</strong></a></p>
+				<p class="body l--fs-4 lh-4">How images and media types like video are shown throughout the site.</p>
 			</div>
 		</div>
 	</div>
 </section>
 <section id="layout">
 	<div class="display-wrap separator">
-		<div class="row">
-			<div class="col-xs">
+		<div class="grid g-cols">
+			<div class="g-col-12">
 				<h5>Layout</h5>
-				<p class="text_size-4 pb5">
+				<p class="body l--fs-6 lh-5 pb-5">
 					When you start any page the first thing to consider is the layout. How a page is constructed largely depends on the types of layout that are available and how they are applicable to your project. Each layout contains different customizable sections shown below.
 				</p>
 			</div>
 		</div>
-		<div class="row pb5">
-			<div class="col-xs-12">
-				<p class="text_size-6"><strong>Overall Structure</strong></p>
+		<div class="grid g-cols pb-5">
+			<div class="g-col-12">
+				<p class="body l--fs-7 lh-7 pt-2"><strong>Overall Structure</strong></p>
 			</div>
 		</div>
-		<div class="row pt5">
-			<div class="col-xs-12">
+		<div class="grid g-cols pt-5">
+			<div class="g-col-12">
 				<%= image_tag "web-struct", width: "100%" %>
 			</div>
 		</div>
-		<div class="row pt10">
-			<div class="col-xs-12">
-				<p class="text_size-6"><strong>Hero</strong></p>
+		<div class="grid g-cols pt-10">
+			<div class="g-col-12">
+				<p class="body l--fs-7 lh-7 pt-2"><strong>Hero</strong></p>
 			</div>
 		</div>
-		<div class="row pt5">
-			<div class="col-xs-12">
+		<div class="grid g-cols pt-5">
+			<div class="g-col-12">
 				<%= image_tag "web-hero1", width: "100%" %>
+			</div>
+		</div>
+		<div class="grid g-cols pt-2">
+			<div class="g-col-8 g-push-2">
+				<p class="body l--fs-5 lh-5">Our hero adds significant importance to each page it is on. It allows a visitor to immediately see the following:</p>
+				<ul class="body l--fs-5 lh-5 list">
+					<li><strong>Lead-in Title</strong> - The page topic</li>
+					<li><strong>Main Heading</strong> - Page context and introduction</li>
+					<li><strong>Call-to-action</strong> - Engage in the primary action of the page without scrolling</li>
+				</ul>
 			</div>
 		</div>
 	</div>
