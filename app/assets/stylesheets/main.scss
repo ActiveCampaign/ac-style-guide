@@ -45,9 +45,13 @@ ul, ol {
     }
   }
 
-  &.list {
+  &.list-disc {
     padding-left: 20px;
     list-style: disc;
+  }
+  &.list-numbered {
+    padding-left: 20px;
+    list-style: numbered;
   }
 }
 
