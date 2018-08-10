@@ -269,3 +269,39 @@ html, body {
 #active_admin_content {
 	padding: 60px;
 }
+
+/*-- Tables --*/
+table {
+	width: 100%;
+	border-collapse: collapse;
+    tr {
+
+      &:hover {
+      	cursor: pointer;
+      }
+      th {
+        padding: 4px 16px;
+        background-color: color(slate, 20);
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: left;
+        border-bottom: color(ocean, 40) 1px solid;
+      }
+      td {
+        border-bottom: color(ocean, 40) 1px solid;
+        text-align: left;
+        padding: 12px 16px;
+      }
+      &.selected, &:hover {
+        td {
+        background-color: color(ocean, 20);
+      }
+    }
+  }
+  .table_actions {
+  	a {
+  		margin-left: 10px;
+  	}
+  }
+}
