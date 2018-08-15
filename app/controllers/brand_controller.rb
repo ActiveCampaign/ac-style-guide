@@ -15,8 +15,6 @@ class BrandController < ApplicationController
   end
   def grid
   end
-  def library
-  end
   def illustrations
   end
 end
