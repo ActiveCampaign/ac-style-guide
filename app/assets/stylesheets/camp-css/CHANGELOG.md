@@ -5,8 +5,35 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [0.12.0] - 2018-08-14
+### Changed
+- CSS Grid fallback now implements gap-sized padding on all sides of grid children instead of just padding-right.
+
 ### Added
-- Mixin for responsive breakpoints.
+- 'xs' icon size.
+- Pointer events class
+
+## [0.11.1] - 2018-08-10
+### Changed
+- Base icon size variables on the base scale value
+- Update readme
+
+## [0.11.0] - 2018-08-10
+### Changed
+- Base font color changed from $slate to $slate-120
+
+### Added
+- Add classes for icon
+
+## [0.10.1] - 2018-08-08
+### Added
+- Create type classes that mirror styles from the type mixins
+- Mixin for responsive breakpoints
+
+### Changed
+- Remove build process from the preversion the npm script
+- Lead-in title letter spacing to 5% of its font size
 
 ## [0.9.0] - 2018-08-07
 ### Added
