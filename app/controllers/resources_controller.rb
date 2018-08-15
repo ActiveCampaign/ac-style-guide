@@ -5,4 +5,7 @@ class ResourcesController < ApplicationController
    def glossary
     @terms = Glossary.all.order('name ASC')
   end
+   def library
+    
+  end
 end

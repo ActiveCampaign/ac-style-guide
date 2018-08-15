@@ -31,6 +31,7 @@ Rails.application.routes.draw do
   get '/email-signature' => 'resources#email_signature'
   get '/resources/email-signature' => 'resources#email_signature'
   get '/resources/glossary' => 'resources#glossary'
+  get '/resources/library' => 'resources#library'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
