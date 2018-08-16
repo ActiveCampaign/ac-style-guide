@@ -95,11 +95,7 @@ p {
 
 /*-- Core layout --*/
 html, body {
-	-webkit-font-smoothing: antialiased;
   overflow-x: hidden;
-  color: $slate-120;
-  font-size: $font-size-3;
-  line-height: $line-height-3;
 }
 header {
 	background-color: color(ocean, 100);
@@ -164,9 +160,9 @@ nav {
 				font-weight: 600;
 				font-size: 16px;
 				text-decoration: none;
-        padding: 6px 8px;
+        padding: 4px 8px;
         border-radius: 4px;
-        margin-bottom: 4px;
+        margin-bottom: 0;
 
 				&:hover {
 	
@@ -432,4 +428,26 @@ img.light-border {
   border: color(slate, 40) 1px solid;
 }
 
+.rarr {
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-style: solid;
+  border-top-color: transparent;
+  border-width: .25rem 0 .25rem .25rem;
+  content: "";
+  display: inline-block;
+  height: 0;
+  transition: .3s cubic-bezier(.75,0,.25,1.25);
+  vertical-align: 1px;
+  width: 0;
+  position: relative;
+  -webkit-transform: translateX(2px);
+  transform: translateX(2px);
+  will-change: transform;
+}
+
+.link:hover > .rarr,
+.link:focus > .rarr {
+  transform: translateX($spacing-1);
+}
 
