@@ -451,3 +451,18 @@ img.light-border {
   transform: translateX($spacing-1);
 }
 
+// Color peek
+.color-peek {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+
+  &.bg-slate-20 {
+    border: color(slate, 40) 1px solid;
+  }
+  &.bg-ocean-20 {
+    border: color(ocean, 40) 1px solid;
+  }
+}
+
