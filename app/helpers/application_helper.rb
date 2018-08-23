@@ -42,4 +42,9 @@ module ApplicationHelper
 	    markdown = Redcarpet::Markdown.new(renderer, extensions)
 	    markdown.render(text)
 	end
+
+	def color_peek(color_name, color_level)
+		block = ('<span class="color-peek bg-' + color_name + '-' + color_level + '"></span>').html_safe
+		return block
+	end
 end
