@@ -33,6 +33,10 @@ Rails.application.routes.draw do
   get '/resources/glossary' => 'resources#glossary'
   get '/resources/library' => 'resources#library'
 
+  # Patterns
+  get '/patterns' => 'patterns#index'
+  get '/patterns/buttons' => 'patterns#buttons'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

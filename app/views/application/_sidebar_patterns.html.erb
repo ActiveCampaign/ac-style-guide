@@ -1,0 +1,11 @@
+<nav>
+	<div class="logo">
+		<a href="/" title="Return home">
+			<%= image_tag "sidebar-logo.png" %>
+		</a>
+	</div>
+	<ul>
+		<li class="section-heading">Patterns</li>
+		<li class="<%= active_class('/patterns/buttons') %>"><%= link_to "Buttons", "/patterns/buttons" %></li>
+	</ul>
+</nav>
