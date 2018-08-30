@@ -325,6 +325,49 @@ table {
   }
 }
 
+/*-- Buttons --*/
+.btn {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  border-style: none;
+  line-height: 32px;
+  background-color: color(ocean, 100);
+  padding: 16px 32px;
+  transition: .3s ease-in;
+  display: inline-block;
+  text-decoration: none;
+
+  &:focus, &:hover {
+    background-color: color(ocean, 120);
+  }
+
+  &.btn-small {
+    padding: 8px 16px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &.btn-large {
+    font-size: 20px;
+  }
+  &.btn-mint {
+    background-color: color(mint, 100);
+
+    &:focus, &:hover {
+      background-color: color(mint, 120);
+    }
+  }
+  &.btn-strawberry {
+    background-color: color(strawberry, 100);
+
+    &:focus, &:hover {
+      background-color: color(strawberry, 120);
+    }
+  }
+}
+
 /*-- Call outs and other shit --*/
 .container {
   width: 100%;
@@ -417,6 +460,14 @@ table {
 .rounded-16 {
   border-radius: 12px;
 }
+.disabled {
+  opacity: .3;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.pill {
+  border-radius: 40px;
+}
 
 
 
@@ -466,3 +517,8 @@ img.light-border {
   }
 }
 
+// Breadcrumbs
+.breadcrumb {
+  color: color(slate, 100);
+  @include body-3;
+}
