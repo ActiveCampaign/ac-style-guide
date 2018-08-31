@@ -97,13 +97,13 @@
 			<div class="g-col-5">
 				<%= image_tag "web-hero2", width: "100%" %>
 				<p class="body fs-6 lh-6 pt-8"><strong>Base Hero</strong></p>
-				<p class="body fs-4 lh-4 pt-2">Our hero allows us to introduce the page topic while providing an easy way for visitors to interact with the primary action. </br></br>NOTE: It always contains a call-to-action button, heading, and lead-in title. </p>
+				<p class="body fs-4 lh-4 pt-2">Our hero allows us to introduce the page topic while providing an easy way for visitors to interact with the primary action. </br></br>NOTE: It always contains a call-to-action <%= link_to "button", "/patterns/buttons" %> heading, and lead-in title. </p>
 				<p class="fs-3 lh-3 fw-700 body tt-upper ls slate-80 mt-8">
 					<i class="icon-xs pr-2 br-1">
 						<%= image_tag "Icon/UI/droplet.svg" %>
 					</i>Style Options</p>
 				<ul class="body fs-4 lh-7 list-disc">
-					<li>Background colors <a href="brand/colors" title="Brand Colors">Slate 100</a> <%= color_peek("slate", "100") %> or  <a href="brand/colors" title="Brand Colors">Ocean 100</a> <%= color_peek("ocean", "100") %></li>
+					<li>Background colors <a href="//brand/colors" title="Brand Colors">Slate 100</a> <%= color_peek("slate", "100") %> or  <a href="//brand/colors" title="Brand Colors">Ocean 100</a> <%= color_peek("ocean", "100") %></li>
 					<li>Background image (Optional)</li>
 				</ul>
 			</div>
@@ -128,7 +128,7 @@
 			<div class="g-col-12">
 				<h5>Controls</h5>
 				<p class="body fs-5 lh-5 pb-5">
-					Controls are essential to any website. It allows visitors to engage in various content throughout the site. Use controls like buttons to allow interaction with topics or input fields to allow submission of content. When using a control in your design, consider the following guidelines.
+					Controls are essential to any website. It allows visitors to engage in various content throughout the site. Use controls like <%= link_to "buttons", "/patterns/buttons" %> to allow interaction with topics or input fields to allow submission of content. When using a control in your design, consider the following guidelines.
 				</p>
 			</div>
 		</div>
@@ -141,7 +141,7 @@
 			<div class="g-col-5">
 				<%= image_tag "web-control1", width: "100%" %>
 				<p class="body fs-6 lh-6 pt-8"><strong>Text Call-to-Action</strong></p>
-				<p class="body fs-4 lh-4 pt-2">Our primary buttons are used to perform various actions in various situations. They could submit data or go-to another page within our site. </p>
+				<p class="body fs-4 lh-4 pt-2">Our primary <%= link_to "buttons", "/patterns/buttons" %> are used to perform various actions in various situations. They could submit data or go-to another page within our site. </p>
 				<p class="fs-3 lh-3 fw-700 body tt-upper ls slate-80 mt-8">
 					<i class="icon-xs pr-2"><%= image_tag "Icon/UI/droplet.svg" %></i>Style Options
 				</p>
@@ -158,7 +158,7 @@
 					<i class="icon-xs pr-2"><%= image_tag "Icon/UI/droplet.svg" %></i>Style Options
 				</p>
 				<ul class="body fs-4 lh-7 list-disc">
-					<li><a href="brand/colors" title="Brand Colors">Ocean 100</a> <%= color_peek("ocean", "100") %> (Default) or <a href="brand/colors" title="Brand Colors">Mint 100</a> <%= color_peek("mint", "100") %> (Used only on blue backgrounds)</li>
+					<li><a href="//brand/colors" title="Brand Colors">Ocean 100</a> <%= color_peek("ocean", "100") %> (Default) or <a href="//brand/colors" title="Brand Colors">Mint 100</a> <%= color_peek("mint", "100") %> (Used only on blue backgrounds)</li>
 					<li>Size: Large, Medium, Small, X-Small</li>
 				</ul>
 			</div>
@@ -167,7 +167,7 @@
 			<div class="g-col-5">
 				<%= image_tag "web-control3", width: "100%" %>
 				<p class="body fs-6 lh-6 pt-8"><strong>Pill Button</strong></p>
-				<p class="body fs-4 lh-4 pt-2">Pill buttons are primarily used in our heros as a primary action button. They shouldn’t be used anywhere else within our site.</p>
+				<p class="body fs-4 lh-4 pt-2">Pill <%= link_to "buttons", "/patterns/buttons" %> are primarily used in our heros as a primary action <%= link_to "button", "/patterns/buttons" %>. They shouldn’t be used anywhere else within our site.</p>
 				<p class="fs-3 lh-3 fw-700 body tt-upper ls slate-80 mt-8">
 					<i class="icon-xs pr-2"><%= image_tag "Icon/UI/droplet.svg" %></i>Style Options
 				</p>
@@ -179,13 +179,20 @@
 			<div class="g-col-5">
 				<%= image_tag "web-control4", width: "100%" %>
 				<p class="body fs-6 lh-6 pt-8"><strong>Cap Button</strong></p>
-				<p class="body fs-4 lh-4 pt-2">Cap buttons are standard buttons built into input fields. These are primarily used for capturing user trial information in our upsell blocks.</p>
+				<p class="body fs-4 lh-4 pt-2">Cap buttons are standard <%= link_to "buttons", "/patterns/buttons" %> built into input fields. These are primarily used for capturing user trial information in our upsell blocks.</p>
 				<p class="fs-3 lh-3 fw-700 body tt-upper ls slate-80 mt-8">
 					<i class="icon-xs pr-2"><%= image_tag "Icon/UI/droplet.svg" %></i>Style Options
 				</p>
 				<ul class="body fs-4 lh-7 list-disc">
-					<li><a href="brand/colors" title="Brand Colors">Ocean 100</a> <%= color_peek("ocean", "100") %> (Default) or <a href="brand/colors" title="Brand Colors">Mint 100</a> <%= color_peek("mint", "100") %> (Used only on blue backgrounds)</li>
+					<li><a href="//brand/colors" title="Brand Colors">Ocean 100</a> <%= color_peek("ocean", "100") %> (Default) or <a href="//brand/colors" title="Brand Colors">Mint 100</a> <%= color_peek("mint", "100") %> (Used only on blue backgrounds)</li>
 				</ul>
+			</div>
+		</div>
+		<div class="grid g-cols mt-10">
+			<div class="g-col-12">
+				<div class="p-4 bc-slate-80 bs-solid br-1 fs-4 callout">
+					<i class="icon-xs pr-2"><%= image_tag "Icon/UI/thumb-up.svg" %></i><span class="fw-700"> Tip:</span> Looking for more info on how to use buttons? Check out our <%= link_to "button pattern guide", "/patterns/buttons" %>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -217,7 +224,7 @@
 					<li><strong>Understand the topic</strong> - The introductory title of the section should be descriptive to the content.</li>
 					<li><strong>Understand the context</strong> - The paragraph copy should explain the context from the main title heading of the section.</li>
 					<li><strong>Visualize the context</strong> - Use video, imagery or illustrations to help visualize the context.</li>
-					<li><strong>Engage in more</strong> -  If describing a topic that relates to a different page of our site, use a text call-to-action button to link to more.</li>
+					<li><strong>Engage in more</strong> -  If describing a topic that relates to a different page of our site, use a text call-to-action <%= link_to "button", "/patterns/buttons" %> to link to more.</li>
 					<li><strong>See the content</strong> - Background color Should be opposite of any other backgrounds near it. This helps to separate content visually.</li>
 				</ol>
 			</div>
@@ -231,7 +238,7 @@
 					<i class="icon-xs pr-2"><%= image_tag "Icon/UI/droplet.svg" %></i>Style Options
 				</p>
 				<ul class="body fs-4 lh-7 list-disc">
-					<li>Background color: <a href="brand/colors" title="Brand Colors">White</a> (Default), <a href="brand/colors" title="Brand Colors">Ocean 20</a> <%= color_peek("ocean", "20") %>, <a href="brand/colors" title="Brand Colors">Ocean 100</a> <%= color_peek("ocean", "100") %>, <a href="brand/colors" title="Brand Colors">Slate 100</a> <%= color_peek("slate", "100") %>, <a href="brand/colors" title="Brand Colors">Lavender 100</a> <%= color_peek("lavender", "100") %>, <a href="brand/colors" title="Brand Colors">Mint 100</a> <%= color_peek("mint", "100") %></li>
+					<li>Background color: <a href="/brand/colors" title="Brand Colors">White</a> (Default), <a href="/brand/colors" title="Brand Colors">Ocean 20</a> <%= color_peek("ocean", "20") %>, <a href="/brand/colors" title="Brand Colors">Ocean 100</a> <%= color_peek("ocean", "100") %>, <a href="/brand/colors" title="Brand Colors">Slate 100</a> <%= color_peek("slate", "100") %>, <a href="/brand/colors" title="Brand Colors">Lavender 100</a> <%= color_peek("lavender", "100") %>, <a href="/brand/colors" title="Brand Colors">Mint 100</a> <%= color_peek("mint", "100") %></li>
 					<li>Content: Aligned left, right or centered depending on previous sections</li>
 				</ul>
 			</div>
@@ -244,7 +251,7 @@
 					<i class="icon-xs pr-2"><%= image_tag "Icon/UI/droplet.svg" %></i>Style Options
 				</p>
 				<ul class="body fs-4 lh-7 list-disc">
-					<li>Background color: <a href="brand/colors" title="Brand Colors">White</a> (Default) or <a href="brand/colors" title="Brand Colors">Ocean 20</a> <%= color_peek("ocean", "20") %> </li>
+					<li>Background color: <a href="/brand/colors" title="Brand Colors">White</a> (Default) or <a href="/brand/colors" title="Brand Colors">Ocean 20</a> <%= color_peek("ocean", "20") %> </li>
 					<li>Content: Centered</li>
 					<li>Layout: 4 column, 3 column</li>
 				</ul>
@@ -259,7 +266,7 @@
 					<i class="icon-xs pr-2"><%= image_tag "Icon/UI/droplet.svg" %></i>Style Options
 				</p>
 				<ul class="body fs-4 lh-7 list-disc">
-					<li>Background color: <a href="brand/colors" title="Brand Colors">Slate 100</a> <%= color_peek("slate", "100") %> (Default), <a href="brand/colors" title="Brand Colors">Ocean 100</a> <%= color_peek("ocean", "100") %> or <a href="brand/colors" title="Brand Colors">Mint 100</a> <%= color_peek("mint", "100") %></li>
+					<li>Background color: <a href="/brand/colors" title="Brand Colors">Slate 100</a> <%= color_peek("slate", "100") %> (Default), <a href="/brand/colors" title="Brand Colors">Ocean 100</a> <%= color_peek("ocean", "100") %> or <a href="/brand/colors" title="Brand Colors">Mint 100</a> <%= color_peek("mint", "100") %></li>
 					<li>Content: Aligned left or right</li>
 				</ul>
 			</div>
