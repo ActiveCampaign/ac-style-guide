@@ -5,5 +5,7 @@ class PatternsController < ApplicationController
 
   def buttons
   end
+  def input_fields
+  end
 
 end

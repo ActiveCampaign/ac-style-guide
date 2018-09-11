@@ -325,6 +325,40 @@ table {
   }
 }
 
+/*-- Input fields --*/
+input {
+  transition: .3s ease-in;
+
+  &:focus {
+    border-color: color(slate, 100);
+    outline: none;
+    transition: .3s ease-in;
+  }
+  &.clean {
+    border-color: color(mint, 80);
+    &:focus {
+      border-color: color(mint, 120);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      right: 0;
+      top: 4px;
+      background-size: 16px;
+      background-image: url(images/UI/check.svg);
+    }
+  }
+  &.dirty {
+    border-color: color(strawberry, 80);
+    &:focus {
+      border-color: color(strawberry, 120);
+    }
+  }
+
+}
+
 /*-- Buttons --*/
 .btn {
   color: #fff;
@@ -406,8 +440,16 @@ table {
   margin-bottom: 40px;
 }
 .callout {
-  background: color(slate, 20);
+  background: color(banana, 20);
   border-width: 0 0 0 8px;
+  font-weight: 500;
+
+  .icon-xs {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-top: 4px;
+  }
 }
 
 .global_message {

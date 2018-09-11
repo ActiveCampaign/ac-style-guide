@@ -36,6 +36,7 @@ Rails.application.routes.draw do
   # Patterns
   get '/patterns' => 'patterns#index'
   get '/patterns/buttons' => 'patterns#buttons'
+  get '/patterns/input-fields' => 'patterns#input_fields'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
