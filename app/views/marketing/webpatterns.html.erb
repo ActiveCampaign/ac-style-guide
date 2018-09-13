@@ -1,21 +1,20 @@
 <%= render "sectionnav" %>
-<header class="bg-ocean-20">
-	<div class="display-wrap">
-		<div class="grid g-cols">
-			<div class="g-col-12">
-				<h1 class="">Web Patterns</h1>
-				<p class="body l--fs-6 lh-6">
-					Our web patterns are commonly used elements and components throughout our marketing website. They provide guidance and rules for how and where to use each pattern specifically.
-				</p>
-			</div>
+<header class="display-wrap pt-0">
+	<div class="grid g-cols">
+		<div class="g-col-12">
+			<h3 class="">Web Patterns</h3>
+			<p class="body fs-4 lh-4 slate-100 mb-8">
+				Our web patterns are commonly used elements and components throughout our marketing website. They provide guidance and rules for how and where to use each pattern specifically.
+			</p>
+		</div>
 	</div>
 </header>
 <section id="introduction">
-	<div class="display-wrap">
+	<div class="display-wrap separator">
 		<div class="grid g-cols">
 			<div class="g-col-12">
 				<h5>Introduction</h5>
-					<p class="body fs-5 lh-5 pb-5">
+					<p class="body fs-4 lh-4 pb-5">
 						When creating a new page, updating or expanding on an existing page it is always recommended to insure that you understand all of our patterns. These guidelines insure each pattern is used properly and provides a consistent experience across our marketing site.
 					</p>
 				</div>
@@ -58,7 +57,7 @@
 		<div class="grid g-cols">
 			<div class="g-col-12">
 				<h5>Layout</h5>
-				<p class="body fs-5 lh-5 pb-5">
+				<p class="body fs-4 lh-4 pb-5">
 					When you start any page the first thing to consider is the layout. How a page is constructed largely depends on the types of layout that are available and how they are applicable to your project. Each layout contains different customizable sections shown below.
 				</p>
 			</div>
@@ -96,7 +95,7 @@
 		<div class="grid g-cols mt-10">
 			<div class="g-col-5">
 				<%= image_tag "web-hero2", width: "100%" %>
-				<p class="body fs-6 lh-6 pt-8"><strong>Base Hero</strong></p>
+				<p class="body fs-5 lh-5 pt-8"><strong>Base Hero</strong></p>
 				<p class="body fs-4 lh-4 pt-2">Our hero allows us to introduce the page topic while providing an easy way for visitors to interact with the primary action. </br></br>NOTE: It always contains a call-to-action <%= link_to "button", "/patterns/buttons" %> heading, and lead-in title. </p>
 				<p class="fs-3 lh-3 fw-700 body tt-upper ls slate-80 mt-8">
 					<i class="icon-xs pr-2 br-1">
@@ -110,7 +109,7 @@
 			<div class="g-col-2">&nbsp;</div>
 			<div class="g-col-5">
 				<%= image_tag "web-hero3", width: "100%" %>
-				<p class="body fs-6 lh-6 pt-8"><strong>Hero With Video</strong></p>
+				<p class="body fs-5 lh-5 pt-8"><strong>Hero With Video</strong></p>
 				<p class="body fs-4 lh-4 pt-2">When introducing a topic that requires more context, a video can be used to create more attention on a page. Videos should describe the topic or context of the page.</p>
 				<p class="fs-3 lh-3 fw-700 body tt-upper ls slate-80 mt-8">
 					<i class="icon-xs pr-2"><%= image_tag "Icon/UI/droplet.svg" %></i>Style Options
@@ -127,20 +126,20 @@
 		<div class="grid g-cols">
 			<div class="g-col-12">
 				<h5>Controls</h5>
-				<p class="body fs-5 lh-5 pb-5">
+				<p class="body fs-4 lh-4 pb-5">
 					Controls are essential to any website. It allows visitors to engage in various content throughout the site. Use controls like <%= link_to "buttons", "/patterns/buttons" %> to allow interaction with topics or input fields to allow submission of content. When using a control in your design, consider the following guidelines.
 				</p>
 			</div>
 		</div>
 		<div class="grid g-cols pb-5">
 			<div class="g-col-12">
-				<p class="body fs-7 lh-7 pt-2"><strong>Buttons</strong></p>
+				<p class="body fs-6 lh-6 pt-2"><strong>Buttons</strong></p>
 			</div>
 		</div>
 		<div class="grid g-cols mt-10">
 			<div class="g-col-5">
 				<%= image_tag "web-control1", width: "100%" %>
-				<p class="body fs-6 lh-6 pt-8"><strong>Text Call-to-Action</strong></p>
+				<p class="body fs-5 lh-5 pt-8"><strong>Text Call-to-Action</strong></p>
 				<p class="body fs-4 lh-4 pt-2">Our primary <%= link_to "buttons", "/patterns/buttons" %> are used to perform various actions in various situations. They could submit data or go-to another page within our site. </p>
 				<p class="fs-3 lh-3 fw-700 body tt-upper ls slate-80 mt-8">
 					<i class="icon-xs pr-2"><%= image_tag "Icon/UI/droplet.svg" %></i>Style Options
@@ -152,7 +151,7 @@
 			<div class="g-col-2">&nbsp;</div>
 			<div class="g-col-5">
 				<%= image_tag "web-control2", width: "100%" %>
-				<p class="body fs-6 lh-6 pt-8"><strong>Standard Button</strong></p>
+				<p class="body fs-5 lh-5 pt-8"><strong>Standard Button</strong></p>
 				<p class="body fs-4 lh-4 pt-2">When introducing a topic that requires more context, a video can be used to create more attention on a page. Videos should describe the topic or context of the page.</p>
 				<p class="fs-3 lh-3 fw-700 body tt-upper ls slate-80 mt-8">
 					<i class="icon-xs pr-2"><%= image_tag "Icon/UI/droplet.svg" %></i>Style Options
@@ -166,7 +165,7 @@
 		<div class="grid g-cols mt-10">
 			<div class="g-col-5">
 				<%= image_tag "web-control3", width: "100%" %>
-				<p class="body fs-6 lh-6 pt-8"><strong>Pill Button</strong></p>
+				<p class="body fs-5 lh-5 pt-8"><strong>Pill Button</strong></p>
 				<p class="body fs-4 lh-4 pt-2">Pill <%= link_to "buttons", "/patterns/buttons" %> are primarily used in our heros as a primary action <%= link_to "button", "/patterns/buttons" %>. They shouldn’t be used anywhere else within our site.</p>
 				<p class="fs-3 lh-3 fw-700 body tt-upper ls slate-80 mt-8">
 					<i class="icon-xs pr-2"><%= image_tag "Icon/UI/droplet.svg" %></i>Style Options
@@ -178,7 +177,7 @@
 			<div class="g-col-2">&nbsp;</div>
 			<div class="g-col-5">
 				<%= image_tag "web-control4", width: "100%" %>
-				<p class="body fs-6 lh-6 pt-8"><strong>Cap Button</strong></p>
+				<p class="body fs-5 lh-5 pt-8"><strong>Cap Button</strong></p>
 				<p class="body fs-4 lh-4 pt-2">Cap buttons are standard <%= link_to "buttons", "/patterns/buttons" %> built into input fields. These are primarily used for capturing user trial information in our upsell blocks.</p>
 				<p class="fs-3 lh-3 fw-700 body tt-upper ls slate-80 mt-8">
 					<i class="icon-xs pr-2"><%= image_tag "Icon/UI/droplet.svg" %></i>Style Options
@@ -202,14 +201,14 @@
 		<div class="grid g-cols">
 			<div class="g-col-12">
 				<h5>Content Blocks</h5>
-				<p class="body fs-5 lh-5 pb-5">
+				<p class="body fs-4 lh-4 pb-5">
 					Content blocks are an important part of our website pages. They allow you to present content to the reader in various ways. These allow the reader to focus on different content at different times. Follow the guidelines below on when to use different content blocks. 
 				</p>
 			</div>
 		</div>
 		<div class="grid g-cols pb-5">
 			<div class="g-col-12">
-				<p class="body fs-7 lh-7 pt-2"><strong>Page Sections</strong></p>
+				<p class="body fs-6 lh-6 pt-2"><strong>Page Sections</strong></p>
 			</div>
 		</div>
 		<div class="grid g-cols pt-5">
@@ -232,7 +231,7 @@
 		<div class="grid g-cols mt-10">
 			<div class="g-col-5">
 				<%= image_tag "web-content2", width: "100%" %>
-				<p class="body fs-6 lh-6 pt-8"><strong>Basic Section</strong></p>
+				<p class="body fs-5 lh-5 pt-8"><strong>Basic Section</strong></p>
 				<p class="body l--fs-4 lh-4 pt-2">Basic Sections are the easiest way to show content on our site pages. They can be combined with other sections to show different content throughout the site.</p>
 				<p class="fs-3 lh-3 fw-700 body tt-upper ls slate-80 mt-8">
 					<i class="icon-xs pr-2"><%= image_tag "Icon/UI/droplet.svg" %></i>Style Options
@@ -245,7 +244,7 @@
 			<div class="g-col-2">&nbsp;</div>
 			<div class="g-col-5">
 				<%= image_tag "web-content3", width: "100%" %>
-				<p class="body fs-6 lh-6 pt-8"><strong>Feature Roll</strong></p>
+				<p class="body fs-5 lh-5 pt-8"><strong>Feature Roll</strong></p>
 				<p class="body fs-4 lh-4 pt-2">Feature sections allow you to show a list of ‘features’ using spot illustrations. These can be placed in various layouts based on the amount of content needed.</p>
 				<p class="fs-3 lh-3 fw-700 body tt-upper ls slate-80 mt-8">
 					<i class="icon-xs pr-2"><%= image_tag "Icon/UI/droplet.svg" %></i>Style Options
@@ -260,7 +259,7 @@
 		<div class="grid g-cols mt-10">
 			<div class="g-col-5">
 				<%= image_tag "web-content4", width: "100%" %>
-				<p class="body fs-6 lh-6 pt-8"><strong>Focal Section</strong></p>
+				<p class="body fs-5 lh-5 pt-8"><strong>Focal Section</strong></p>
 				<p class="body fs-4 lh-4 pt-2">Focal sections allow you to capture your reader using various background colors along with captivating photography. Focal sections can be used once on a page.</p>
 				<p class="fs-3 lh-3 fw-700 body tt-upper ls slate-80 mt-8">
 					<i class="icon-xs pr-2"><%= image_tag "Icon/UI/droplet.svg" %></i>Style Options
