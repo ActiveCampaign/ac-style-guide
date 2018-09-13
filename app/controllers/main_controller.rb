@@ -1,4 +1,5 @@
 class MainController < ApplicationController
+  layout "nosidebar"
   def home
   end
   def colors
@@ -15,8 +16,8 @@ class MainController < ApplicationController
 
   end
   def changes
-    @changes = Change.all.order('date DESC')
 
+    @changes = Change.all.order('date DESC')
     @change_days = @changes.group_by{ |change| change.date }
   end
   def grid

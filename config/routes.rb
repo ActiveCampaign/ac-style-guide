@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get '/changes' => 'main#changes'
 
   # Brand Pages
+  get '/brand' => 'brand#index'
   get '/typography' => 'main#typography'
   get '/brand/typography' => 'brand#typography'
   get '/colors' => 'main#colors'
