@@ -1,6 +1,6 @@
 class PatternsController < ApplicationController
 
-	def index
+	def intro
 	end
 
   def buttons

@@ -35,7 +35,7 @@ Rails.application.routes.draw do
   get '/resources/library' => 'resources#library'
 
   # Patterns
-  get '/patterns' => 'patterns#index'
+  get '/patterns/intro' => 'patterns#intro'
   get '/patterns/buttons' => 'patterns#buttons'
   get '/patterns/input-fields' => 'patterns#input_fields'
 
