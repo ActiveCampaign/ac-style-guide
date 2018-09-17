@@ -285,7 +285,7 @@ footer {
 table {
   &.style1 {
     width: 100%;
-    @include body-2;
+  @include body-2;
     border-top: color(slate, 40) 1px solid;
       td {
         padding: 12px;
@@ -366,34 +366,59 @@ table {
 
 /*-- Input fields --*/
 input {
-  transition: .3s ease-in;
+  transition: .2s ease-in;
+  position: relative;
+  background-color: #fff;
+
+  &.small {
+    padding-left: 12px;
+  }
 
   &:focus {
     border-color: color(slate, 100);
+    box-shadow: 0 0 0 1px color(slate,100);
     outline: none;
-    transition: .3s ease-in;
+    transition: .2s ease-in;
   }
   &.clean {
     border-color: color(mint, 80);
+    box-shadow: 0 0 0 1px color(mint,80);
+    background-size: 16px;
+    background-image: url(Icon/UI/check.svg);
+    background-position: right 12px center;
+    background-repeat: no-repeat;
+
     &:focus {
       border-color: color(mint, 120);
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      width: 16px;
-      height: 16px;
-      right: 0;
-      top: 4px;
-      background-size: 16px;
-      background-image: url(images/UI/check.svg);
+      box-shadow: 0 0 0 1px color(mint,120);
     }
   }
   &.dirty {
     border-color: color(strawberry, 80);
+    box-shadow: 0 0 0 1px color(strawberry,80);
+    background-size: 16px;
+    background-image: url(Icon/UI/alert.svg);
+    background-position: right 12px center;
+    background-repeat: no-repeat;
+
+
     &:focus {
-      border-color: color(strawberry, 120);
+      border-color: color(strawberry, 100);
+      box-shadow: 0 0 0 1px color(strawberry,120);
     }
+  }
+
+  &.search {
+    padding-left: 28px;
+
+    background-size: 16px;
+    background-image: url(Icon/UI/magnifying-glass.svg);
+    background-position: left 8px center;
+    background-repeat: no-repeat;
+  }
+
+  &::placeholder {
+    color: color(slate, 60);
   }
 
 }
