@@ -100,6 +100,44 @@
 		</ol>
 	</div>
 </section>
+<section id="audible-feedback">
+	<div class="display-wrap separator">
+		<h5>Audible Feedback</h5>
+		<p class="fs-4 lh-4">Screen readers are an important part to those with extreme visual disabilities. They allow the use of websites and web products by using audible feedback. Combining the keyboard control requirements with proper accessible markup, a user with such a disability can access our content the same as others. When building our products please consider the guidelines below. </p>
+		<div class="grid g-cols gap-l">
+			<div class="g-col-6">
+				<div class="mt-6">
+					<%= image_tag "access-audible1", width: "468" %>
+					<div class="bs-solid bw-1 w-50 mt-6"></div>
+					<p class="fs-3 lh-3">Custom elements that have no descriptive purpose, although important cannot be understood by screen readers and will be skipped.</p>
+				</div>
+<%= raw markdown(<<-'EOF'
+```html
+<div class="error">
+    There was an error with your submission, please try again
+</div>
+```
+EOF
+) %>
+			</div>
+			<div class="g-col-6">
+				<div class="mt-6">
+					<%= image_tag "access-audible2", width: "468" %>
+					<div class="bs-solid bw-1 w-50 mt-6"></div>
+					<p class="fs-3 lh-3">By using ARIA role 'alert' we can immediately tell the user after submission that there was an error.</p>
+				</div>
+<%= raw markdown(<<-'EOF'
+```html
+<div class="error" role="alert">
+    ...
+</div>
+```
+EOF
+) %>
+			</div>
+		</div>
+	</div>
+</section>
 <section id="resources">
 	<div class="display-wrap separator">
 		<h5>Resources</h5>
