@@ -7,22 +7,22 @@
 	<p class="fs-6 fw-600 pt-6">Process</p>
 	<div class="grid g-cols gap-l mt-6">
 		<div class="g-col-3">
-			<%= image_tag "grid-cohesive", width: "100%" %>
+			<%= image_tag "access-identify.svg" %>
 			<p class="fs-4 fw-500">Identify</p>
 			<p class="fs-3 lh-3 slate-80">Those who have impairments and need special accessibility throughout our products require different solutions. </p>
 		</div>
 		<div class="g-col-3">
-			<%= image_tag "grid-responsive", width: "100%" %>
+			<%= image_tag "access-plan.svg" %>
 			<p class="fs-4 fw-500">Plan</p>
 			<p class="fs-3 lh-3 slate-80">Check and insure all accessibility guidelines are met before implementing a new or updated solution.</p>
 		</div>
 		<div class="g-col-3">
-			<%= image_tag "grid-predictive", width: "100%" %>
+			<%= image_tag "access-adapt.svg" %>
 			<p class="fs-4 fw-500">Adapt</p>
 			<p class="fs-3 lh-3 slate-80">Implement globally accessible solutions into our products using appropriate guidelines.</p>
 		</div>
 		<div class="g-col-3">
-			<%= image_tag "grid-predictive", width: "100%" %>
+			<%= image_tag "access-unify.svg" %>
 			<p class="fs-4 fw-500">Unify</p>
 			<p class="fs-3 lh-3 slate-80">Create a unified, inclusive experience throughout our products and services.</p>
 		</div>
@@ -55,12 +55,12 @@
 		<p class="fs-4 lh-4 pb-2">Ensuring those with more severe visual impairments have complete control and access to our products, the following should be considered in any case:</p>
 		<ul class="fs-4 lh-4 pl-6">
 			<li class="pb-4">If using an image, provide an adequate <a href="https://www.w3schools.com/TAGS/att_alt.asp" target="_blank" title="ALT attribute">ALT attribute</a> for description and include an <a href="http://w3c.github.io/html-reference/aria/aria.html" target="_blank">ARIA attribute</a> for screen readers when necessary. </li>
-			<li class="pb-4">Controls should be clearly identifiable via all their states and accessible for screen readers. They should be easy to navigate using <a href="#keyboard-controls">keyboard controls</a> and <a href="/brand/colors">colors</a> should adhere to our <a href="/brand/colors#usage">color usage guide</a>.</li>
+			<li class="pb-4">Controls should be clearly identifiable via all their states and accessible for screen readers. They should be easy to navigate using <a href="#keyboard-control">keyboard controls</a> and <a href="/brand/colors">colors</a> should adhere to our <a href="/brand/colors#usage">color usage guide</a>.</li>
 			<li class="pb-4">Controls should always be consistent and predictable. </li>
 			<li class="pb-4">Text sizes and line heights should be sized appropriately and have the ability to be adjusted if needed by the user.</li>
 			<li class="pb-4">Text colors should be chosen carefully. Rever to our typography color guide for more information.</li>
-			<li class="pb-4">Navigational elements should be clearly identifiable and understandable by a screen reader. They should also be easy to use via <a href="#keyboard-controls">keyboard controls</a>.</li>
-			<li class="pb-4">Form elements and user input controls should be easily identifiable by a screen reader and easy to navigate using <a href="#keyboard-controls">keyboard controls</a>. </li>
+			<li class="pb-4">Navigational elements should be clearly identifiable and understandable by a screen reader. They should also be easy to use via <a href="#keyboard-control">keyboard controls</a>.</li>
+			<li class="pb-4">Form elements and user input controls should be easily identifiable by a screen reader and easy to navigate using <a href="#keyboard-control">keyboard controls</a>. </li>
 			<li class="">Visual feedback should be described and accessible by a screen reader. Examples include loading states, notifications and status updates, animations and control state changes such as focus/active or hover.</li>
 		</ul>
 
@@ -69,7 +69,7 @@
 		<p class="fs-4 lh-4 pb-2">As with severe visual impairments, motor, neurological and cognitive impairments can have many challenges for accessibility. Below the following should be considered in any case:</p>
 		<ul class="fs-4 lh-4 pl-6">
 			<li class="pb-4">Navigation should be consistent with other instances and easy to understand. </li>
-			<li class="pb-4">Controls and inputs should not require precision to activate/focus or require a mouse exclusively. Each control should be keyboard accessible. Refer to the section below <a href="#keyboard-controls">Keyboard Control</a> for more information.</li>
+			<li class="pb-4">Controls and inputs should not require precision to activate/focus or require a mouse exclusively. Each control should be keyboard accessible. Refer to the section below <a href="#keyboard-control">Keyboard Control</a> for more information.</li>
 		</ul>
 
 	</div>
@@ -106,7 +106,7 @@
 		<p class="fs-4 lh-4">Use the following website to better craft and form your accessible user experience. Each website has a multitude of information on specific topics that will help you learn how to apply more accessible content.</p>
 
 		<p class="fs-6 fw-600 pt-8">General Web Accessibility</p>
-		<ul class="pl-5">
+		<ul class="pl-5 fs-4">
 			<li class="pb-2"><a href="https://material.io/design/usability/accessibility.html" target="_blank">Google's Material Design System Accessibility</a></li>
 			<li class="pb-2"><a href="https://polaris.shopify.com/guides/accessibility" target="_blank">Shopify's Polaris Design System Accessibility</a></li>
 			<li class="pb-2"><a href="https://atlassian.design/guidelines/product/foundations/accessibility" target="_blank">Atlassian's Design System Accessibility</a></li>
@@ -116,17 +116,17 @@
 
 		</ul>
 		<p class="fs-6 fw-600 pt-5">Keyboard Controls</p>
-		<ul class="pl-5">
+		<ul class="pl-5 fs-4">
 			<li class="pb-0"><a href="https://webaim.org/techniques/keyboard/" target="_blank">WebAIM: Keyboard Accessibility</a></li>
 		</ul>
 		<p class="fs-6 fw-600 pt-5">ARIA Attribute</p>
-		<ul class="pl-5">
+		<ul class="pl-5 fs-4">
 			<li class="pb-2"><a href="http://w3c.github.io/html-reference/aria/aria.html" target="_blank">W3C ARIA attribute reference</a></li>
 			<li class="pb-2"><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA" target="_blank">Mozilla Web Docs Aria attribute</a></li>
 			<li class=""><a href="https://www.sitepoint.com/how-to-use-aria-effectively-with-html5/" target="_blank">Sitepoint: How to Use ARIA Effectively with HTML5</a></li>
 		</ul>
 		<p class="fs-6 fw-600 pt-5">Understanding Disabilities</p>
-		<ul class="pl-5">
+		<ul class="pl-5 fs-4">
 			<li class="pb-2"><a href="http://www.colourblindawareness.org/colour-blindness/" target="_blank">Color Blindness facts</a></li>
 			<li class="pb-2"><a href="https://webaim.org/articles/cognitive/" target="_blank">WebAIM: Cognitive Disabilities</a></li>
 			<li class=""><a href="https://webaim.org/articles/motor/" target="_blank">WebAIM: Motor Disabilities</a></li>
