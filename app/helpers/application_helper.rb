@@ -10,7 +10,9 @@ module ApplicationHelper
 
 
 	def active_class(link_path)
-	  current_page?(link_path) ? "active" : ""
+	  if request.fullpath.start_with?(link_path) 
+	  	return "active"
+	  end
 	end
 
 	# Color helper 
@@ -55,8 +57,12 @@ module ApplicationHelper
 	def render_sidebar
 		if request.path_info.include?( '/patterns' )
 			render(partial: "sidebar_patterns")
-		else
-			render(partial: "sidebar_default")
+		elsif request.path_info.include?( '/brand' )
+			render(partial: "sidebar_brand")
+		elsif request.path_info.include?( '/marketing' )
+			render(partial: "sidebar_marketing")
+		elsif request.path_info.include?( '/resources' )
+			render(partial: "sidebar_resources")
 		end
 	end
 end

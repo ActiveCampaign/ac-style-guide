@@ -1,9 +1,23 @@
 <%= Rouge::Themes::Github.render(:scope => '.highlight, code') %>
 .highlight {
 	padding: 0;
-	background-color: #FAFBFF;
-	color: #1F2129;
+	background-color: #1F2129;
+	color: #fff;
 	margin-top: 20px;
+
+	code {
+		background-color: #1F2129;
+	}
+
+	.nt {
+		color: #5884EA;
+	}
+	.na {
+		color: #1BDDB1;
+	}
+	.s {
+		color: #F3376B;
+	}
 }
 
 .highlight > pre {

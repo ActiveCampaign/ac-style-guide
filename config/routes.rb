@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get '/changes' => 'main#changes'
 
   # Brand Pages
+  get '/brand' => 'brand#index'
   get '/typography' => 'main#typography'
   get '/brand/typography' => 'brand#typography'
   get '/colors' => 'main#colors'
@@ -34,8 +35,10 @@ Rails.application.routes.draw do
   get '/resources/library' => 'resources#library'
 
   # Patterns
-  get '/patterns' => 'patterns#index'
+  get '/patterns/intro' => 'patterns#intro'
+  get '/patterns/accessibility' => 'patterns#accessibility'
   get '/patterns/buttons' => 'patterns#buttons'
+  get '/patterns/input-fields' => 'patterns#input_fields'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
