@@ -1,0 +1,22 @@
+sections:
+  main:
+    display: Main
+    fields:
+      title:
+        display: Title
+        type: text
+        instructions: 'Describe the change'
+        localizable: true
+      description:
+        type: textarea
+        instructions: 'Describe the change in details'
+        display: Description
+      change_date:
+        display: 'Change Date'
+        type: date
+        allow_blank: false
+        allow_time: false
+        require_time: false
+        earliest_date: 'January 1, 1900'
+taxonomies: true
+title: 'Collection Entry-Change'

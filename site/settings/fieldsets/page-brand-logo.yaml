@@ -1,0 +1,61 @@
+sections:
+  intro:
+    display: Intro
+    fields:
+      template:
+        type: template
+        display: template
+      title:
+        display: Title
+        type: text
+        localizable: true
+      description:
+        type: text
+        display: Description
+  color:
+    display: Color
+    fields:
+      section_title1:
+        type: text
+        display: section_title1
+      section_description1:
+        type: textarea
+        display: section_description1
+      section_content1:
+        spellcheck: false
+        allow_source: true
+        autoLink: true
+        target_blank: false
+        link_validation: false
+        force_plain_text: false
+        clean_pasted_html: false
+        container: main
+        folder: img/page/logo
+        restrict_assets: false
+        type: bard
+        display: section_content1
+  guidelines:
+    display: Guidelines
+    fields:
+      section_title2:
+        type: text
+        display: section_title2
+      section_description2:
+        type: textarea
+        display: section_description2
+      section_content2:
+        spellcheck: true
+        allow_source: true
+        autoLink: true
+        target_blank: false
+        link_validation: false
+        force_plain_text: true
+        clean_pasted_html: false
+        container: main
+        folder: img/page/logo
+        restrict_assets: false
+        type: bard
+        display: section_content2
+taxonomies: true
+title: Page-Logo
+create_title: ''

@@ -1,0 +1,56 @@
+{{ partial:section_nav }}
+
+<header class="display-wrap pt-0">
+	<div class="grid g-cols">
+		<div class="g-col-12">
+			<h3 class="">{{ title }}</h3>
+			<p class="body fs-4 lh-4 slate-100 mb-8">
+				{{ description }}
+			</p>
+		</div>
+	</div>
+	{{ intro_image }}
+		<img src="{{ value }}"  />
+	{{ /intro_image }}
+</header>
+<section id="labels">
+	<div class="display-wrap separator">
+		<h5>{{ labels_title }}</h5>
+		<p class="fs-4 pb-10 lh-4">{{ labels_description }}</p>
+		{{ label_image }}
+			 <img src="{{ value }}" width="80%" />
+		{{ /label_image }}
+	</div>
+</section>
+<section id="styles">
+	<div class="display-wrap separator">
+		<h5>{{ styles_title }}</h5>
+		<table class="style2 fs-3 lh-3">
+			<tr>
+				<th>Button</th>
+				<th>Usage</th>
+			</tr>
+			{{ styles_table }}
+			<tr>
+			  {{ cells }}
+			    <td>{{ value | markdown }}</td>
+			  {{ /cells }}
+			</tr>
+			{{ /styles_table }}
+		</table>
+	</div>
+</section>
+<section id="options">
+	<div class="display-wrap separator">
+		<h5>{{ options_title }}</h5>
+		<p class="fs-4 pb-10 lh-4">{{ options_description }}</p>
+		{{ options_content }}
+	</div>
+</section>
+<section id="grouped-buttons">
+	<div class="display-wrap separator">
+		<h5>{{ gb_title }}</h5>
+		<p class="fs-4 pb-10 lh-4">{{ gb_description }}</p>
+		{{ gb_content }}
+	</div>
+</section>

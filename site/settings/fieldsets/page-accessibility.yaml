@@ -1,0 +1,58 @@
+sections:
+  introduction:
+    display: Introduction
+    fields:
+      template:
+        type: template
+        width: 25
+        display: template
+      title:
+        display: Title
+        type: text
+        localizable: true
+      description:
+        type: textarea
+        display: description
+      intro_content:
+        spellcheck: true
+        allow_source: true
+        autoLink: false
+        target_blank: false
+        link_validation: false
+        force_plain_text: true
+        clean_pasted_html: false
+        restrict_assets: false
+        type: bard
+        display: intro_content
+  checklist:
+    display: Checklist
+    fields:
+      checklist_title:
+        type: text
+        display: checklist_title
+      checklist_description:
+        type: textarea
+        display: checklist_description
+      checklist_content:
+        spellcheck: true
+        allow_source: true
+        autoLink: true
+        target_blank: false
+        link_validation: false
+        force_plain_text: false
+        clean_pasted_html: false
+        restrict_assets: false
+        type: bard
+        display: checklist_content
+        container: main
+        folder: img/page/accessibility
+      checklist_content2:
+        settings: Standard
+        container: main
+        folder: img/page/accessibility
+        restrict_assets: false
+        type: redactor
+        display: checklist_content2
+taxonomies: true
+title: Page-Accessibility
+create_title: ''

@@ -1,0 +1,17 @@
+start_page: dashboard
+date_format: Y/n/d
+pagination_size: 50
+widgets:
+  -
+    type: collection
+    collection: changes
+    limit: 5
+  -
+    type: form
+    form: contact
+    limit: 5
+    title: 'Recent Submissions'
+    width: full
+    fields:
+      - name
+      - email

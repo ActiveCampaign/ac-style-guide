@@ -1,0 +1,62 @@
+{{ if segment_1 === "brand" }}
+<div class="l--g-col-2 sidebar">
+	<nav>
+		<ul>
+			<li class="section-heading">Brand</li>
+			{{ nav from="/brand" include_home="false" scope="tag" }}
+            <li{{ if is_current or is_parent }} class="active" {{ /if }}>
+                <a href="{{ url }}">{{ tag:nav_title or title }}</a>
+            </li>
+            {{ /nav }}
+		</ul>
+
+	</nav>
+</div>
+{{ /if }}
+
+{{ if segment_1 === "patterns" }}
+<div class="l--g-col-2 sidebar">
+	<nav>
+		<ul>
+			<li class="section-heading">Getting Started</li>
+			{{ nav from="/patterns" include_home="false" scope="tag" exclude="/patterns/controls|/patterns/foundation"}}
+            <li{{ if is_current or is_parent }} class="active" {{ /if }}>
+                <a href="{{ url }}">{{ tag:nav_title or title }}</a>
+            </li>
+            {{ /nav }}
+        </ul>
+        <ul>
+            <li class="section-heading">Foundation</li>
+            {{ nav from="/patterns/foundation" include_home="false" scope="tag" }}
+            <li{{ if is_current or is_parent }} class="active" {{ /if }}>
+                <a href="{{ url }}">{{ tag:nav_title or title }}</a>
+            </li>
+            {{ /nav }}
+		</ul>
+        <ul>
+            <li class="section-heading">Controls</li>
+            {{ nav from="/patterns/controls" include_home="false" scope="tag" }}
+            <li{{ if is_current or is_parent }} class="active" {{ /if }}>
+                <a href="{{ url }}">{{ tag:nav_title or title }}</a>
+            </li>
+            {{ /nav }}
+		</ul>
+
+	</nav>
+</div>
+{{ /if }}
+{{ if segment_1 === "resources" }}
+<div class="l--g-col-2 sidebar">
+	<nav>
+		<ul>
+			<li class="section-heading">Resources</li>
+			{{ nav from="/resources" include_home="false" scope="tag" }}
+            <li{{ if is_current or is_parent }} class="active" {{ /if }}>
+                <a href="{{ url }}">{{ tag:nav_title or title }}</a>
+            </li>
+            {{ /nav }}
+		</ul>
+
+	</nav>
+</div>
+{{ /if }}

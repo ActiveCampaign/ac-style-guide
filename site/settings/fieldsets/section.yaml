@@ -1,0 +1,27 @@
+sections:
+  title:
+    display: 'Title and Description'
+    fields:
+      title:
+        display: Title
+        type: text
+        instructions: 'Title of your section'
+        localizable: true
+      description:
+        type: textarea
+        display: Description
+      content:
+        spellcheck: true
+        allow_source: true
+        autoLink: false
+        target_blank: false
+        link_validation: false
+        force_plain_text: true
+        clean_pasted_html: false
+        restrict_assets: true
+        type: bard
+        display: content
+        container: main
+        folder: img/page
+taxonomies: true
+title: 'Basic Section'

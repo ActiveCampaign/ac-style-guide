@@ -1,0 +1,27 @@
+<div class="navbar g-col-12 white bg-none pt-4">
+    <nav>
+        <div class="grid g-cols ai-center">
+            <div class="g-col-9 ta-left">
+                <div class="inline-block va-middle">
+                    <a href="/" title="Return Home" class="block"><img src="/assets/img/ac-logo-white.png" width="258" class="block pr-8"></a>
+                </div>
+                <ul class="inline-block va-middle">
+                    {{ nav from="/" include_home="false" exclude="changes" scope="tag" }}
+                    <li{{ if is_current or is_parent }} class="active"{{ /if }}>
+                        <a href="{{ url }}">{{ tag:nav_title or title }}
+                        </a>
+                    </li>
+                    {{ /nav }}
+                </ul>
+            </div>
+            <div class="g-col-3 ta-right">
+                <ul>
+                    <li{{ if is_current or is_parent }} class="active"{{ /if }}>
+                        <a href="/changes">What's New?
+                        </a>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>

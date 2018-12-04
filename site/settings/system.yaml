@@ -1,0 +1,47 @@
+locales:
+  en:
+    full: en_US
+    name: English
+    url: 'http://localhost:3000/'
+timezone: America/Chicago
+date_format: 'F jS, Y'
+default_extension: html
+filesystems:
+  content:
+    driver: local
+    root: site/content
+  storage:
+    driver: local
+    root: site/storage
+  users:
+    driver: local
+    root: site/users
+  themes:
+    driver: local
+    root: site/themes
+    url: /site/themes
+app_key: NOgXs9CGv6Ruj0xAP0mBO2Ecq0kqKK4d
+redactor:
+  -
+    name: Standard
+    settings:
+      buttons:
+        - formatting
+        - bold
+        - italic
+        - link
+        - unorderedlist
+        - orderedlist
+        - html
+        - image
+        - file
+        - horizontalrule
+  -
+    name: Basic
+    settings:
+      buttons:
+        - bold
+        - italic
+yaml_parser: symfony
+send_powered_by_header: true
+ensure_unique_ids: true

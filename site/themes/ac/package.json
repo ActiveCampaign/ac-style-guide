@@ -1,0 +1,21 @@
+{
+		"private": true,
+		"scripts": {
+				"dev": "webpack -w"
+		},
+		"devDependencies": {
+				"jquery": "^3.1.0",
+				"clean-webpack-plugin": "^0.1.19",
+				"camp-css": "^0.13.1",
+				"css-loader": "^1.0.0",
+				"node-sass": "^4.9.3",
+				"sass-loader": "^7.1.0",
+				"style-loader": "^0.23.0",
+				"extract-text-webpack-plugin": "^4.0.0-beta.0",
+				"webpack": "^4.20.2",
+				"webpack-bundle-analyzer": "^2.13.1",
+				"webpack-cli": "^3.1.2",
+				"webpack-dashboard": "^2.0.0"
+		},
+		"dependencies": {}
+}

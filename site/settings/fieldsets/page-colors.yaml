@@ -1,0 +1,112 @@
+sections:
+  introduction:
+    display: Introduction
+    fields:
+      redirect:
+        cheatsheet: false
+        restrict_assets: false
+        type: markdown
+        display: redirect
+      template:
+        type: template
+        display: template
+      title:
+        display: Title
+        type: text
+        localizable: true
+      description:
+        type: textarea
+        display: description
+      intro_content:
+        spellcheck: true
+        allow_source: true
+        autoLink: false
+        target_blank: false
+        link_validation: false
+        force_plain_text: false
+        clean_pasted_html: false
+        restrict_assets: false
+        type: bard
+        display: 'Intro Content'
+  primary_palette:
+    display: 'Primary Palette'
+    fields:
+      primary_title:
+        type: text
+        display: 'Primary Title'
+      primary_description:
+        type: textarea
+        display: 'Primary Description'
+      primary_content:
+        spellcheck: true
+        allow_source: true
+        autoLink: false
+        target_blank: false
+        link_validation: false
+        force_plain_text: false
+        clean_pasted_html: false
+        restrict_assets: false
+        type: bard
+        display: 'Primary Content'
+  secondary_palette:
+    display: 'Secondary Palette'
+    fields:
+      secondary_title:
+        type: text
+        display: 'Secondary Title'
+      secondary_description:
+        type: textarea
+        display: 'Secondary Description'
+      secondary_content:
+        spellcheck: true
+        allow_source: true
+        autoLink: false
+        target_blank: false
+        link_validation: false
+        force_plain_text: false
+        clean_pasted_html: false
+        restrict_assets: false
+        type: bard
+        display: 'Secondary Content'
+  accessibility:
+    display: Accessibility
+    fields:
+      accessibility_title:
+        type: text
+        display: 'Accessibility Title'
+      accessibility_description:
+        type: textarea
+        display: 'Accessibility Description'
+      accessibility_content:
+        spellcheck: true
+        allow_source: true
+        autoLink: false
+        target_blank: false
+        link_validation: false
+        force_plain_text: false
+        clean_pasted_html: false
+        restrict_assets: false
+        type: bard
+        display: 'Accessibility Content'
+  usage:
+    display: Usage
+    fields:
+      usage_title:
+        type: text
+        display: usage_title
+      usage_description:
+        type: textarea
+        display: usage_description
+      usage_content:
+        spellcheck: true
+        allow_source: true
+        autoLink: false
+        target_blank: false
+        link_validation: false
+        force_plain_text: false
+        clean_pasted_html: false
+        restrict_assets: false
+        type: bard
+        display: usage_content
+taxonomies: true
+title: Page-Colors

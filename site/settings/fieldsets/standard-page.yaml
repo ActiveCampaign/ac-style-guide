@@ -1,0 +1,54 @@
+sections:
+  top:
+    display: Top
+    fields:
+      layout:
+        cheatsheet: false
+        restrict_assets: false
+        type: markdown
+        display: layout
+        width: 25
+      redirect:
+        cheatsheet: false
+        restrict_assets: false
+        type: markdown
+        display: redirect
+        width: 25
+      template:
+        type: template
+        display: template
+        width: 25
+      title:
+        display: Title
+        type: text
+        instructions: 'Main page title'
+        default: 'Page Title'
+        localizable: true
+      description:
+        type: textarea
+        display: description
+      page_description:
+        type: text
+        instructions: 'Opening page description.'
+        display: 'Page Description'
+        default: 'Describe your page here. Be descriptive about the content.'
+  section_1:
+    display: 'Section 1'
+    fields:
+      section_name:
+        type: text
+        display: section_name
+      section_content:
+        spellcheck: true
+        allow_source: true
+        autoLink: false
+        target_blank: false
+        link_validation: false
+        force_plain_text: true
+        clean_pasted_html: false
+        restrict_assets: false
+        type: bard
+        display: section_content
+taxonomies: true
+title: 'Standard Page'
+create_title: ''

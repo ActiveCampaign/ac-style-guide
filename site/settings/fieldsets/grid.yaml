@@ -1,0 +1,72 @@
+sections:
+  introduction:
+    display: Introduction
+    fields:
+      template:
+        type: template
+        display: template
+      title:
+        display: Title
+        type: text
+        localizable: true
+      description:
+        type: textarea
+        display: description
+      intro_content:
+        spellcheck: true
+        allow_source: true
+        autoLink: false
+        target_blank: false
+        link_validation: false
+        force_plain_text: true
+        clean_pasted_html: false
+        restrict_assets: false
+        type: bard
+        display: intro-content
+  structure:
+    display: Structure
+    fields:
+      structure_title:
+        type: text
+        display: structure_title
+      structure_description:
+        type: textarea
+        display: structure_description
+      structure_content:
+        spellcheck: true
+        allow_source: true
+        autoLink: false
+        target_blank: false
+        link_validation: false
+        force_plain_text: false
+        clean_pasted_html: false
+        container: main
+        folder: img/page/grid
+        restrict_assets: false
+        type: bard
+        display: structure_content
+  spacing:
+    display: Spacing
+    fields:
+      spacing_title:
+        type: text
+        display: spacing_title
+      spacing_description:
+        type: textarea
+        display: spacing_description
+      spacing_content:
+        spellcheck: true
+        allow_source: true
+        autoLink: false
+        target_blank: false
+        link_validation: false
+        force_plain_text: false
+        clean_pasted_html: false
+        container: main
+        folder: img/page/grid
+        restrict_assets: false
+        type: bard
+        display: spacing_content
+taxonomies: true
+title: Page-Grid
+create_title: ''
