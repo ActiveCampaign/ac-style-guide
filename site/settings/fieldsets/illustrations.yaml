@@ -1,0 +1,72 @@
+sections:
+  introduction:
+    display: Introduction
+    fields:
+      template:
+        type: template
+        display: template
+      title:
+        display: Title
+        type: text
+        localizable: true
+      description:
+        type: textarea
+        display: description
+      intro_content:
+        spellcheck: true
+        allow_source: true
+        autoLink: false
+        target_blank: false
+        link_validation: false
+        force_plain_text: false
+        clean_pasted_html: false
+        container: main
+        folder: img/page/illustrations
+        restrict_assets: false
+        type: bard
+        display: intro_content
+  principles:
+    display: Principles
+    fields:
+      principles_title:
+        type: text
+        display: principles_title
+      principles_description:
+        type: textarea
+        display: principles_description
+      principles_content:
+        spellcheck: true
+        allow_source: true
+        autoLink: false
+        target_blank: false
+        link_validation: false
+        force_plain_text: true
+        clean_pasted_html: false
+        restrict_assets: false
+        type: bard
+        display: principles_content
+  spot_illustrations:
+    display: 'Spot Illustrations'
+    fields:
+      spot_title:
+        type: text
+        display: spot_title
+      spot_description:
+        type: textarea
+        display: spot_description
+      spot_content:
+        spellcheck: true
+        allow_source: true
+        autoLink: false
+        target_blank: false
+        link_validation: false
+        force_plain_text: false
+        clean_pasted_html: false
+        container: main
+        folder: img/page/illustrations
+        restrict_assets: false
+        type: bard
+        display: spot_content
+taxonomies: true
+title: Page-Illustrations
+create_title: ''

@@ -1,0 +1,20 @@
+sections:
+  main:
+    display: Main
+    fields:
+      template:
+        type: template
+        display: template
+      title:
+        display: Title
+        type: text
+      description:
+        type: textarea
+        display: Description
+      collection:
+        collection: {  }
+        type: collection
+        display: collection
+taxonomies: true
+title: Page-Glossary
+create_title: ''

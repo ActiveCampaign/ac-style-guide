@@ -1,0 +1,44 @@
+{
+  "name": "activecampaign/styleguide",
+  "require-dev": {
+    "laravel/valet": "^2.0",
+    "statamic/cli": "^1.0",
+    "symfony/dotenv": "^4.1"
+  },
+  "scripts": {
+    "clean": [
+      "rm -fr build"
+    ],
+    "build:assets": [
+      "yarn --cwd themes/v2 --ignore-engines install",
+      "yarn --cwd themes/v2 build"
+    ],
+    "build:dist": [
+      "mkdir -p build/dist",
+      "cp -R composer.json composer.lock health.php index.php please robots.txt src statamic build/dist",
+      "rm -fr build/dist/statamic/bootstrap/cache/*.php build/dist/statamic/bootstrap/cache/*.json",
+      "@composer install -d build/dist -n --no-ansi --no-dev --prefer-dist -o --no-scripts --ignore-platform-reqs",
+      "(find build/dist -type d -name .git && find build/dist -name .gitignore && find build/dist -name .gitmodules) | xargs rm -rf",
+      "mkdir -p build/dist/themes/v2",
+      "cp -R themes/v2/dist themes/v2/images themes/v2/layouts themes/v2/partials themes/v2/settings themes/v2/templates themes/v2/meta.yaml build/dist/themes/v2",
+      "cp deploy/appspec.yml build",
+      "cp -R deploy/scripts build",
+      "cp deploy/config/apache/.htaccess build/dist",
+      "cd build && tar czf build.tar.gz appspec.yml dist scripts"
+    ],
+    "build": [
+      "@build:assets",
+      "@build:dist"
+    ]
+  },
+  "require": {
+    "symfony/framework-bundle": "^4.1",
+    "liip/monitor-bundle": "^2.6",
+    "symfony/asset": "^4.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Another awesome Statamic site">
+    <title>{{ title ensure_right=" / " }}{{ site_name }}</title>
+    <link rel="stylesheet" href="{{ theme:asset src="dist/main.css" cache_bust="true" }}">
+
+</head>
+
+<body class="home">
+    <header class="bg-ocean pt-0">
+        <div class="display-wrap ta-center">
+            {{ partial:nav_home }}
+
+            {{ header_content }}
+        </div>
+    </header>
+    <section>
+        <div class="display-wrap">
+            {{ featured_content }}
+        </div>
+    </section>
+    <section>
+        <div class="display-wrap">
+            {{ quick_links_content }}
+        </div>
+    </section>
+    <section class="pt-10">
+        <div class="display-wrap pt-10">
+            <div class="p-6 bw-2 bs-solid bc-slate-20 br-1">
+                <p class="fs-3 tt-upper slate-80 fw-700 mt-0 ls mb-4">What's New?</p>
+                {{ collection:changes limit="{{ changes_num }}" as="entries" }}
+                    <table>
+                        {{ entries }}       
+                        <tr>
+                            <td class="fs-3 fw-500 pr-4">{{ change_date format="F jS, Y" }}</td>
+                            <td class="fs-3">{{ title }}</td>
+                        </tr>
+                        {{ /entries }}
+                    </table>
+                {{ /collection:changes }}
+                <a href="/changes" class="fw-500 fs-3 mt-4 block">Read More Updates</a>
+            </div>
+
+        </div>
+    </section>
+    {{ partial:footer }}
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="{{ theme:asset src="dist/index.bundle.js" cache_bust="true" }}"></script>
+</body>
+</html>

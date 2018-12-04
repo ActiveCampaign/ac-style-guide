@@ -1,0 +1,11 @@
+sections:
+  main:
+    display: Main
+    fields:
+      definition:
+        type: textarea
+        instructions: 'Definition of the glossary term'
+        display: Definition
+taxonomies: true
+title: Glossary-Term
+create_title: ''

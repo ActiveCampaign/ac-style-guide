@@ -1,0 +1,16 @@
+<header class="display-wrap pt-0">
+	<h3>{{ title }}</h3>
+	<p class="body fs-4 lh-4 slate-100">
+		{{ description }}
+	</p>
+</header>
+<section>
+	<div class="display-wrap separator">
+		{{ collection:glossary sort="title" }}
+			<div class="mb-8" id="{{ slug }}">
+				<p class="fs-5 fw-700">{{ title }} <span class="fs-3 fw-400 permalink pl-2"><a href="#{{ slug }}" title="Link to definition">Link</a></p>
+				<p class="fs-4 lh-4">{{ definition }}
+			</div>
+		{{ /collection:glossary }}
+	</div>
+</section>

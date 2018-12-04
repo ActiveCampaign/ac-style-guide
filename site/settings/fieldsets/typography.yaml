@@ -1,0 +1,158 @@
+sections:
+  introduction:
+    display: Introduction
+    fields:
+      template:
+        type: template
+        display: template
+      title:
+        display: Title
+        type: text
+        localizable: true
+      description:
+        type: textarea
+        display: description
+  font_stack:
+    display: 'Font Stack'
+    fields:
+      section_title1:
+        type: text
+        display: section_title1
+      section_description1:
+        type: textarea
+        display: section_description1
+      section_content1:
+        spellcheck: false
+        allow_source: true
+        autoLink: false
+        target_blank: false
+        link_validation: false
+        force_plain_text: false
+        clean_pasted_html: false
+        container: main
+        folder: img/page/typography
+        restrict_assets: false
+        type: bard
+        display: section_content1
+  scale:
+    display: Scale
+    fields:
+      section_title2:
+        type: text
+        display: section_title2
+      section_description2:
+        type: textarea
+        display: section_description2
+      section_content2:
+        spellcheck: false
+        allow_source: true
+        autoLink: false
+        target_blank: false
+        link_validation: false
+        force_plain_text: false
+        clean_pasted_html: false
+        container: main
+        folder: img/page/typography
+        restrict_assets: false
+        type: bard
+        display: section_content2
+  weights:
+    display: Weights
+    fields:
+      section_title3:
+        type: text
+        display: section_title3
+      section_description3:
+        type: textarea
+        display: section_description3
+      section_content3:
+        spellcheck: true
+        allow_source: true
+        autoLink: false
+        target_blank: false
+        link_validation: false
+        force_plain_text: false
+        clean_pasted_html: false
+        container: main
+        folder: img/page/typography
+        restrict_assets: false
+        type: bard
+        display: section_content3
+  colors:
+    display: Colors
+    fields:
+      colors_title:
+        type: text
+        display: colors_title
+      colors_description:
+        type: textarea
+        display: colors_description
+      colors_content:
+        restrict_assets: false
+        type: redactor
+        display: colors_content
+  styles:
+    display: Styles
+    fields:
+      section_title4:
+        type: text
+        display: section_title4
+      section_description4:
+        type: textarea
+        display: section_description4
+      section_content4:
+        spellcheck: true
+        allow_source: true
+        autoLink: false
+        target_blank: false
+        link_validation: false
+        force_plain_text: false
+        clean_pasted_html: false
+        container: main
+        folder: img/page/typography
+        restrict_assets: false
+        type: bard
+        display: section_content4
+  extended_styles:
+    display: 'Extended Styles'
+    fields:
+      section_title5:
+        type: text
+        display: section_title5
+      section_description5:
+        type: textarea
+        display: section_description5
+      section_content5:
+        spellcheck: true
+        allow_source: true
+        autoLink: false
+        target_blank: false
+        link_validation: false
+        force_plain_text: false
+        clean_pasted_html: false
+        restrict_assets: false
+        type: bard
+        display: section_content5
+  usage:
+    display: Usage
+    fields:
+      section_title6:
+        type: text
+        display: section_title6
+      section_description6:
+        type: textarea
+        display: section_description6
+      section_content6:
+        spellcheck: true
+        allow_source: true
+        autoLink: false
+        target_blank: false
+        link_validation: false
+        force_plain_text: false
+        clean_pasted_html: false
+        restrict_assets: false
+        type: bard
+        display: section_content6
+taxonomies: true
+title: Page-Typography
+create_title: ''

@@ -1,0 +1,204 @@
+{{ partial:section_nav }}
+<input type="text" id="hex-copy" value="">
+<header class="display-wrap pt-0">
+	<div class="grid g-cols">
+		<div class="g-col-12">
+			<h3 class="">{{ title }}</h3>
+			<p class="body fs-4 lh-4 slate-100 mb-8">
+				{{ description }}
+			</p>
+		</div>
+	</div>
+	{{ intro_content }}
+</header>
+<section id="primary-palette">
+	<div class="display-wrap separator">
+		<div class="grid g-cols">
+			<div class="g-col-12">
+				<h5>{{ primary_title }}</h5>
+				<p class="body fs-4 lh-4 pb-5">
+					{{ primary_description }}
+				</p>	
+			</div>
+		</div>
+		<div class="color-palettes grid g-cols gap-s body" id="primary">
+			<div class="palette g-col-12 l--g-col-3 m--g-col-6" data-palette="Ocean">
+			{{ collection:colors sort="level:desc" palette:is="Ocean" level:is="100"}}
+				<div class="swatch main bg-{{ title }}" data-hex="{{ hex }}" title="Click to copy color to clipboard">
+					<div class="swatch-text">
+						<div class="fs-4 white"><strong>{{ palette }}</strong></div>
+						<span class="fs-3 white value fw-500" data-level="{{ level }}">{{ hex }}</span>
+						<span class="fs-3 white level fw-500">{{ level }}</span>
+					</div>
+				</div>
+			{{ /collection:colors }}
+			{{ collection:colors sort="level:desc" palette:is="Ocean" level:isnt="100" as="entries"}}
+					{{ entries }}
+					<div class="swatch bg-{{ title }}" data-hex="{{ hex }}" title="Click to copy color to clipboard">
+						<span class="fs-3  {{ if level === 120 || level === 80 }}white{{/if}} value fw-500" data-level="{{ level }}">{{ hex }}</span>
+						<span class="fs-3 {{ if level === 120 || level === 80 }}white{{/if}} level fw-500">{{ level }}</span>
+					</div>
+					{{ /entries }}
+			{{ /collection:colors }}
+			</div>
+			<div class="palette g-col-12 l--g-col-3 m--g-col-6" data-palette="Slate">
+			{{ collection:colors sort="level:desc" palette:is="Slate" level:is="100"}}
+				<div class="swatch main bg-{{ title }}" data-hex="{{ hex }}" title="Click to copy color to clipboard">
+					<div class="swatch-text">
+						<div class="fs-4 white"><strong>{{ palette }}</strong></div>
+						<span class="fs-3 white value fw-500" data-level="{{ level }}">{{ hex }}</span>
+						<span class="fs-3 white level fw-500">{{ level }}</span>
+					</div>
+				</div>
+			{{ /collection:colors }}
+			{{ collection:colors sort="level:desc" palette:is="Slate" level:isnt="100" as="entries"}}
+					{{ entries }}
+					<div class="swatch bg-{{ title }}" data-hex="{{ hex }}" title="Click to copy color to clipboard">
+						<span class="fs-3 {{ if level === 120 || level === 80 }}white{{/if}} value fw-500" data-level="{{ level }}">{{ hex }}</span>
+						<span class="fs-3 {{ if level === 120 || level === 80 }}white{{/if}} level fw-500">{{ level }}</span>
+					</div>
+					{{ /entries }}
+			{{ /collection:colors }}
+			</div>
+			<div class="palette g-col-12 l--g-col-3 m--g-col-6" data-palette="Mint">
+			{{ collection:colors sort="level:desc" palette:is="Mint" level:is="100"}}
+				<div class="swatch main bg-{{ title }}" data-hex="{{ hex }}" title="Click to copy color to clipboard">
+					<div class="swatch-text">
+						<div class="fs-4 white"><strong>{{ palette }}</strong></div>
+						<span class="fs-3 white value fw-500" data-level="{{ level }}">{{ hex }}</span>
+						<span class="fs-3 white level fw-500">{{ level }}</span>
+					</div>
+				</div>
+			{{ /collection:colors }}
+			{{ collection:colors sort="level:desc" palette:is="Mint" level:isnt="100" as="entries"}}
+					{{ entries }}
+					<div class="swatch bg-{{ title }}" data-hex="{{ hex }}" title="Click to copy color to clipboard">
+						<span class="fs-3 {{ if level === 120 || level === 80 }}white{{/if}} value fw-500" data-level="{{ level }}">{{ hex }}</span>
+						<span class="fs-3 {{ if level === 120 || level === 80 }}white{{/if}} level fw-500">{{ level }}</span>
+					</div>
+					{{ /entries }}
+			{{ /collection:colors }}
+			</div>
+		</div>
+	</div>
+</section>
+<section id="secondary-palette">
+	<div class="display-wrap separator">
+		<div class="grid g-cols">
+			<div class="g-col-12">
+				<h5>{{ secondary_title }}</h5>
+				<p class="body fs-4 lh-4 pb-5">
+					{{ secondary_description }}
+				</p>	
+			</div>
+		</div>
+		<div class="color-palettes grid g-cols gap-s body" id="primary">
+			<div class="palette g-col-12 l--g-col-3 m--g-col-6" data-palette="Strawberry">
+			{{ collection:colors sort="level:desc" palette:is="Strawberry" level:is="100"}}
+				<div class="swatch main bg-{{ title }}" data-hex="{{ hex }}" title="Click to copy color to clipboard">
+					<div class="swatch-text">
+						<div class="fs-4 white"><strong>{{ palette }}</strong></div>
+						<span class="fs-3 white value fw-500" data-level="{{ level }}">{{ hex }}</span>
+						<span class="fs-3 white level fw-500">{{ level }}</span>
+					</div>
+				</div>
+			{{ /collection:colors }}
+			{{ collection:colors sort="level:desc" palette:is="Strawberry" level:isnt="100" as="entries"}}
+					{{ entries }}
+					<div class="swatch bg-{{ title }}" data-hex="{{ hex }}" title="Click to copy color to clipboard">
+						<span class="fs-3 {{ if level === 120 || level === 80 }}white{{/if}} value fw-500" data-level="{{ level }}">{{ hex }}</span>
+						<span class="fs-3 {{ if level === 120 || level === 80 }}white{{/if}} level fw-500">{{ level }}</span>
+					</div>
+					{{ /entries }}
+			{{ /collection:colors }}
+			</div>
+			<div class="palette g-col-12 l--g-col-3 m--g-col-6" data-palette="Creamsicle">
+			{{ collection:colors sort="level:desc" palette:is="Creamsicle" level:is="100"}}
+				<div class="swatch main bg-{{ title }}" data-hex="{{ hex }}" title="Click to copy color to clipboard">
+					<div class="swatch-text">
+						<div class="fs-4 white"><strong>{{ palette }}</strong></div>
+						<span class="fs-3 white value fw-500" data-level="{{ level }}">{{ hex }}</span>
+						<span class="fs-3 white level fw-500">{{ level }}</span>
+					</div>
+				</div>
+			{{ /collection:colors }}
+			{{ collection:colors sort="level:desc" palette:is="Creamsicle" level:isnt="100" as="entries"}}
+					{{ entries }}
+					<div class="swatch bg-{{ title }}" data-hex="{{ hex }}" title="Click to copy color to clipboard">
+						<span class="fs-3 {{ if level === 120 || level === 80 }}white{{/if}} value fw-500" data-level="{{ level }}">{{ hex }}</span>
+						<span class="fs-3 {{ if level === 120 || level === 80 }}white{{/if}} level fw-500">{{ level }}</span>
+					</div>
+					{{ /entries }}
+			{{ /collection:colors }}
+			</div>
+			<div class="palette g-col-12 l--g-col-3 m--g-col-6" data-palette="Lavender">
+			{{ collection:colors sort="level:desc" palette:is="Lavender" level:is="100"}}
+				<div class="swatch main bg-{{ title }}" data-hex="{{ hex }}" title="Click to copy color to clipboard">
+					<div class="swatch-text">
+						<div class="fs-4 white"><strong>{{ palette }}</strong></div>
+						<span class="fs-3 white value fw-500" data-level="{{ level }}">{{ hex }}</span>
+						<span class="fs-3 white level fw-500">{{ level }}</span>
+					</div>
+				</div>
+			{{ /collection:colors }}
+			{{ collection:colors sort="level:desc" palette:is="Lavender" level:isnt="100" as="entries"}}
+					{{ entries }}
+					<div class="swatch bg-{{ title }}" data-hex="{{ hex }}" title="Click to copy color to clipboard">
+						<span class="fs-3 {{ if level === 120 || level === 80 }}white{{/if}} value fw-500" data-level="{{ level }}">{{ hex }}</span>
+						<span class="fs-3 {{ if level === 120 || level === 80 }}white{{/if}} level fw-500">{{ level }}</span>
+					</div>
+					{{ /entries }}
+			{{ /collection:colors }}
+			</div>
+			<div class="palette g-col-12 l--g-col-3 m--g-col-6" data-palette="Banana">
+			{{ collection:colors sort="level:desc" palette:is="Banana" level:is="100"}}
+				<div class="swatch main bg-{{ title }}" data-hex="{{ hex }}" title="Click to copy color to clipboard">
+					<div class="swatch-text">
+						<div class="fs-4 white"><strong>{{ palette }}</strong></div>
+						<span class="fs-3 white value fw-500" data-level="{{ level }}">{{ hex }}</span>
+						<span class="fs-3 white level fw-500">{{ level }}</span>
+					</div>
+				</div>
+			{{ /collection:colors }}
+			{{ collection:colors sort="level:desc" palette:is="Banana" level:isnt="100" as="entries"}}
+					{{ entries }}
+					<div class="swatch bg-{{ title }}" data-hex="{{ hex }}" title="Click to copy color to clipboard">
+						<span class="fs-3 {{ if level === 120 || level === 80 }}white{{/if}} value fw-500" data-level="{{ level }}">{{ hex }}</span>
+						<span class="fs-3 {{ if level === 120 || level === 80 }}white{{/if}} level fw-500">{{ level }}</span>
+					</div>
+					{{ /entries }}
+			{{ /collection:colors }}
+			</div>
+		</div>
+		{{ secondary_content }}
+	</div>
+</section>
+<section id="accessibility">
+	<div class="display-wrap separator">
+		<div class="grid g-cols">
+			<div class="g-col-12">
+				<h5>{{ accessibility_title }}</h5>
+				<p class="body fs-4 lh-4 pb-5">
+					{{ accessibility_description }}
+				</p>	
+			</div>
+		</div>
+		{{accessibility_content}}
+	</div>
+</section>
+<section id="usage">
+	<div class="display-wrap separator">
+		<div class="grid g-cols">
+			<div class="g-col-12">
+				<h5>{{ usage_title }}</h5>
+				<p class="body fs-4 lh-4 pb-5">
+					{{ usage_description }}
+				</p>	
+			</div>
+		</div>
+		{{usage_content}}
+	</div>
+</section>
+{{ yield:page_scripts }}
+	<script src="{{ theme:asset src="dist/colors.bundle.js" cache_bust="true" }}"></script>
+{{ /yield:page_scripts }}

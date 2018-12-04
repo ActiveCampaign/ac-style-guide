@@ -1,0 +1,30 @@
+sections:
+  main:
+    display: Main
+    fields:
+      level:
+        type: integer
+        display: level
+      hex:
+        type: text
+        display: hex
+      cmyk:
+        type: text
+        display: cmyk
+      pms:
+        type: text
+        display: PMS
+      palette:
+        options:
+          Ocean: Ocean
+          Strawberry: Strawberry
+          Lavender: Lavender
+          Banana: Banana
+          Creamsicle: Creamsicle
+          Slate: Slate
+          Mint: Mint
+        type: select
+        display: palette
+taxonomies: true
+title: Color
+hide: true

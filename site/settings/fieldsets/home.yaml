@@ -1,0 +1,50 @@
+sections:
+  main:
+    display: Main
+    fields:
+      layout:
+        cheatsheet: false
+        restrict_assets: false
+        type: markdown
+        width: 25
+        display: layout
+      changes_num:
+        type: integer
+        instructions: 'The number of changes to show'
+        width: 25
+        display: changes_num
+      header_content:
+        spellcheck: true
+        allow_source: true
+        autoLink: false
+        target_blank: false
+        link_validation: false
+        force_plain_text: true
+        clean_pasted_html: false
+        restrict_assets: false
+        type: bard
+        display: 'Header Content'
+      featured_content:
+        spellcheck: true
+        allow_source: true
+        autoLink: false
+        target_blank: false
+        link_validation: false
+        force_plain_text: true
+        clean_pasted_html: false
+        restrict_assets: false
+        type: bard
+        display: 'Featured Content'
+      quick_links_content:
+        spellcheck: true
+        allow_source: true
+        autoLink: false
+        target_blank: false
+        link_validation: false
+        force_plain_text: true
+        clean_pasted_html: false
+        restrict_assets: false
+        type: bard
+        display: 'Quick Links Content'
+taxonomies: true
+title: Home

@@ -1,0 +1,148 @@
+template: grid
+title: Grid
+description: 'How elements are sized and spaced plays an important role on how we visually construct our product user interfaces. It allows us to visually apply cohesiveness and structure on how elements are placed within a specific space. This cohesiveness creates a visual consistency throughout all of our products.'
+intro_content: |
+  <p class="l--fs-7 l--lh-7 mb-6"><strong>Principles</strong></p>
+  <div class="grid g-cols">
+  	<div class="g-col-3">
+  		<img src="/assets/img/page/grid/grid-cohesive.png">
+  		<p class="fs-4 fw-500">Cohesive</p>
+  		<p class="fs-3 lh-3 slate-80">Elements should flow naturally within the grid’s defined boundaries. Padding and spacing should be consistent and uniform.</p>
+  	</div>
+  	<div class="g-col-1">&nbsp;</div>
+  	<div class="g-col-3">
+  		<img src="/assets/img/page/grid/grid-responsive.png">
+  		<p class="fs-4 fw-500">Responsive</p>
+  		<p class="fs-3 lh-3 slate-80">Screens should adapt to a user’s viewing device to maximize content visibility and increase usability.</p>
+  	</div>
+  	<div class="g-col-1">&nbsp;</div>
+  	<div class="g-col-3">
+  		<img src="/assets/img/page/grid/grid-predictive.png">
+  		<p class="fs-4 fw-500">Predictive</p>
+  		<p class="fs-3 lh-3 slate-80">Consistent element sizing and placement creates a unified experience allowing the user to feel familiar with each interface.</p>
+  	</div>
+  </div>
+  
+structure_title: Structure
+structure_description: 'Our main grid structure is composed of columns with a maximum width of 1024px and approximately 12 columns. It is a responsive system that allows it to be condensed down to mobile devices with a small viewport.  '
+structure_content: |
+  <p class="l--fs-7 l--lh-7 mb-6"><strong>Breakpoints</strong></p>
+  	<div class="grid g-cols gap-l mt-5">
+  		<div class="g-col-5 ta-center">
+  			<img src="/assets/img/page/grid/grid-breakpoint-XL.png" width="387">
+  			<p class="fs-4 fw-500">Desktop</p>
+  		</div>
+  		<div class="g-col-2">&nbsp;</div>
+  		<div class="g-col-5 ta-center">
+  			<img src="/assets/img/page/grid/grid-breakpoint-L.png" width="300">
+  			<p class="fs-4 fw-500">Laptop</p>
+  		</div>
+  	</div>
+  	<div class="grid g-cols gap-l mt-5">
+  		<div class="g-col-5 ta-center">
+  			<img src="/assets/img/page/grid/grid-breakpoint-M.png" width="300">
+  			<p class="fs-4 fw-500">Tablet</p>
+  		</div>
+  		<div class="g-col-2">&nbsp;</div>
+  		<div class="g-col-5 ta-center">
+  			<img src="/assets/img/page/grid/grid-breakpoint-S.png" width="206">
+  			<p class="fs-4 fw-500">Mobile</p>
+  		</div>
+  	</div>
+  <div class="grid g-cols mt-10">
+  	<div class="g-col-12">
+  		<table class="style2 fs-3 lh-3">
+  			<tr>
+  				<th>Breakpoint</th>
+  				<th>Max Width</th>
+  				<th>Columns</th>
+  				<th>Gutters</th>
+  			</tr>
+  			<tr>
+  				<td>(<strong>XL</strong>) Desktop</td>
+  				<td>1080px</td>
+  				<td>12</td>
+  				<td>20px outside, 24px between columns</td>
+  			</tr>
+  			<tr>
+  				<td>(<strong>L</strong>) Laptop</td>
+  				<td>960</td>
+  				<td>12</td>
+  				<td>20px outside, 24px between columns</td>
+  			</tr>
+  			<tr>
+  				<td>(<strong>M</strong>) Tablet</td>
+  				<td>720px</td>
+  				<td>12</td>
+  				<td>20px outside, 24px between columns</td>
+  			</tr>
+  			<tr>
+  				<td>(<strong>S</strong>) Phone</td>
+  				<td>480px</td>
+  				<td>12</td>
+  				<td>20px outside, 24px between columns</td>
+  			</tr>
+  		</table>
+  	</div>
+  </div>
+  <div class="grid g-cols mt-10">
+  <div class="g-col-12 mt-10 mb-8">
+  	<p class="l--fs-7 l--lh-7 mb-6"><strong>Gutters</strong></p>
+  	<p class="fs-4 lh-4">Gutter spacing is defined by the gap between each column on the grid. Spacing can be altered in some cases to provide more space between elements horizontally. When the gutter changes, so do the elements spanning the columns as shown below.</p>
+  </div>
+  <div class="g-col-12">
+  	<p class="fs-4 fw-500">Small</p>
+  	<img src="/assets/img/page/grid/grid-gutter-s.svg" width="100%">
+  </div>
+  <div class="g-col-12 mt-5">
+  	<p class="fs-4 fw-500">Medium (Default)</p>
+  	<img src="/assets/img/page/grid/grid-gutter-m.svg" width="100%">
+  </div>
+  <div class="g-col-12 mt-5">
+  	<p class="fs-4 fw-500">Large</p>
+  	<img src="/assets/img/page/grid/grid-gutter-l.svg" width="100%">
+  </div>
+  </div>
+  
+spacing_title: Spacing
+spacing_description: 'Our grid system uses a baseline measurement of 4px to compose a grid. All components for web based products align to this baseline grid when being spaced and positioned. Use the scale below to properly space elements within our grid both vertically and horizontally. '
+spacing_content: |
+  <div class="grid g-cols">
+  	<p class="l--fs-7 l--lh-7 mb-6"><strong>Baseline</strong></p>
+  	<div class="g-col-12 mt-5 bg-ocean-20 ta-center">
+  		<div class="p-8">
+  			<img src="/assets/img/page/grid/grid-baseline.png" width="80%">
+  		</div>
+  	</div>
+  	<div class="g-col-12">
+  		<div class="p-3 bg-banana-20 bc-banana bs-solid br-1 fs-3 callout mt-6">
+  			<i class="icon-xs pr-2"><img src="/assets/img/UI/star.svg"></i><strong>Tip</strong> If you are using design software like Sketch, be sure to set your grid at 4px to make designing elements and spacing easier.
+  		</div>
+  	</div>
+  
+  </div>
+  <div class="grid g-cols mt-10">
+  	<div class="g-col-12 mb-5">
+  		<p class="l--fs-7 l--lh-7 mb-6"><strong>Scale</strong></p>
+  	</div>
+  	<div class="g-col-12 bg-ocean-20 ta-center">
+  		<div class="p-8">
+  			<img src="/assets/img/page/grid/grid-scale.svg" width="80%">
+  		</div>
+  	</div>
+  </div>
+  <div class="grid g-cols mt-10">
+  	<div class="g-col-12 mb-5">
+  		<p class="l--fs-7 l--lh-7 mb-6"><strong>Sizing and Spacing</strong></p>
+  	</div>
+  	<div class="g-col-12 bg-ocean-20 ta-center">
+  		<div class="p-8">
+  			<img src="/assets/img/page/grid/grid-spacing-example.svg" width:="" "908px"="">
+  		</div>
+  	</div>
+  	<div class="g-col-12 mt-4 fs-3 lh-3">
+  		Use the grid with consistent and equal spacing when possible. Doing so creates a cohesive user interface that is easily legible and easy to understand.
+  	</div>
+  </div>
+fieldset: grid
+id: c2f7e092-a4f4-4c54-8779-6c254ecd8ef9

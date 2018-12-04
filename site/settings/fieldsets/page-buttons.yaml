@@ -1,0 +1,79 @@
+sections:
+  main:
+    display: Intro
+    fields:
+      template:
+        type: template
+        width: 25
+        display: template
+      title:
+        display: Title
+        type: text
+        localizable: true
+      description:
+        type: textarea
+        display: Description
+      intro_image:
+        container: main
+        folder: img/page/buttons
+        restrict: false
+        type: assets
+        display: 'Intro Image'
+        mode: list
+  labels:
+    display: Labels
+    fields:
+      labels_title:
+        type: text
+        display: 'Labels Title'
+      labels_description:
+        type: textarea
+        display: 'Labels Description'
+      label_image:
+        container: main
+        folder: img/page/buttons
+        restrict: false
+        type: assets
+        display: 'Label Image'
+  styles:
+    display: Styles
+    fields:
+      styles_title:
+        type: text
+        display: styles_title
+      styles_description:
+        type: textarea
+        display: styles_description
+      styles_table:
+        type: table
+        display: styles_table
+  options:
+    display: Options
+    fields:
+      options_title:
+        type: text
+        width: 25
+        display: options_title
+      options_description:
+        type: textarea
+        display: options_description
+      options_content:
+        restrict_assets: false
+        type: redactor
+        display: options_content
+  grouped_buttons:
+    display: 'Grouped Buttons'
+    fields:
+      gb_title:
+        type: text
+        display: gb_title
+      gb_description:
+        type: textarea
+        display: gb_description
+      gb_content:
+        restrict_assets: false
+        type: redactor
+        display: gb_content
+taxonomies: true
+title: Page-Buttons
+create_title: ''

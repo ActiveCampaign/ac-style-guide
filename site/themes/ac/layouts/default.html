@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Another awesome Statamic site">
+    <title>{{ title ensure_right=" / " }}{{ site_name }}</title>
+
+    <link rel="stylesheet" href="{{ theme:asset src="dist/main.css" cache_bust="true" }}">
+    <script src="{{ theme:asset src="dist/index.bundle.js" cache_bust="true" }}"></script>
+    {{ highlight style="monokai"}}
+</head>
+
+<body>
+    <div class="grid g-cols">
+        {{ partial:nav }}
+        {{ partial:sidebar }}
+        <div class="l--g-col-10 g-col-12 mt-10">
+            {{ template_content }}
+            {{ partial:footer }}
+        </div>
+
+    </div>
+    
+    {{ yield:page_scripts }}
+</body>
+</html>
