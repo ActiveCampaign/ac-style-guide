@@ -1,0 +1,25 @@
+
+
+<!-- Sub nav -->
+<div class="mobile-nav closed">
+    <nav>
+        <ul class="block my-0">
+            {{ nav from="/" include_home="false" scope="tag" }}
+            <li{{ if is_current or is_parent }} class="active"{{ /if }}>
+                <a class="inline-block" href="{{ url }}">{{ tag:nav_title or title }}
+                </a>
+            </li>
+            {{ /nav }}
+        </ul>
+    </nav>
+</div>
+<div class="mobile-sub-header px-6 py-3">
+    <span class="fs-6 fw-700">{{ title }}</span>
+    <div class="_state-control inline-block f-right">
+        <a href="javascript:void(0)" id="sub-nav_trigger" class=""><img class="block" src="{{ theme:asset src="images/Icon/Chevron/Down.svg" }}" width="20" }}></a>
+    </div>
+</div>
+<div class="mobile-sub-nav closed">
+    {{ partial:sidebar }}
+</div>
+
