@@ -8072,10 +8072,8 @@ html, body {
   overflow-x: hidden;
   background: #fff; }
 
-header {
-  padding: 82px 0 32px 0; }
-  header h1 {
-    margin-top: 0; }
+header h1 {
+  margin-top: 0; }
 
 footer {
   margin-top: 60px; }
@@ -8085,12 +8083,12 @@ footer {
   z-index: 2;
   background-color: #356AE6;
   width: 100%;
-  padding: 10px 24px;
+  top: 0;
+  left: 0;
   height: 64px; }
   .navbar nav .logo-top {
     display: block; }
   .navbar nav ul {
-    display: inline-block;
     margin: 0;
     padding: 0; }
     .navbar nav ul li {
@@ -8106,9 +8104,72 @@ footer {
       .navbar nav ul li.active a {
         opacity: 1; }
 
-.home .navbar {
-  position: relative;
-  padding: 40px 0 40px 0; }
+.navbar #mobile-nav_trigger {
+  margin-right: -8px; }
+
+.mobile-sub-header {
+  width: 100%;
+  position: fixed;
+  top: 64px;
+  left: 0;
+  margin-top: 0;
+  border-bottom: 1px #E3EBFC solid;
+  z-index: 2;
+  background: #fff; }
+  .mobile-sub-header ._state-control #sub-nav_trigger {
+    display: inline-block;
+    transform: none;
+    transition: transform .2s ease-in-out; }
+  .mobile-sub-header ._state-control.nav_open #sub-nav_trigger {
+    transform: rotate(180deg);
+    transform-origin: 50% 50%; }
+
+.mobile-nav, .mobile-sub-nav {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background: #fff;
+  width: 100%;
+  max-height: 100%;
+  transform: translateY(116px);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 13px 33px 0 rgba(53, 106, 230, 0.2); }
+  .mobile-nav nav, .mobile-sub-nav nav {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px #E3EBFC solid; }
+    .mobile-nav nav ul, .mobile-sub-nav nav ul {
+      list-style: none;
+      margin: 0;
+      margin-top: 24px; }
+      .mobile-nav nav ul li, .mobile-sub-nav nav ul li {
+        font-weight: 500;
+        font-family: "IBM Plex Sans", "Franklin Gothic", "ITC Franklin Gothic", helvetica, arial, sans-serif;
+        font-size: 1.125rem;
+        line-height: 1.75rem; }
+        .mobile-nav nav ul li a, .mobile-sub-nav nav ul li a {
+          display: inline-block;
+          padding: 8px;
+          border-radius: 4px; }
+        .mobile-nav nav ul li.active a, .mobile-sub-nav nav ul li.active a {
+          background-color: #E3EBFC; }
+      .mobile-nav nav ul li.section-heading, .mobile-sub-nav nav ul li.section-heading {
+        font-family: "IBM Plex Sans", "Franklin Gothic", "ITC Franklin Gothic", helvetica, arial, sans-serif;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-transform: uppercase;
+        color: #5F667E;
+        margin-bottom: 12px;
+        font-weight: 500; }
+      .mobile-nav nav ul:first-of-type, .mobile-sub-nav nav ul:first-of-type {
+        margin-top: 0; }
+  .mobile-nav.closed, .mobile-sub-nav.closed {
+    transform: translateY(-100%); }
+
+.home .mobile-nav {
+  transform: translateY(55px); }
+  .home .mobile-nav.closed {
+    transform: translateY(-100%); }
 
 .sidebar {
   position: relative;
@@ -8172,16 +8233,13 @@ footer {
 
 .display-wrap {
   position: relative;
-  padding: 64px 0;
+  padding: 64px 1.5rem;
   margin: 0 auto;
   max-width: 960px; }
   .display-wrap.separator {
     border-top: #CED3E0 1px solid; }
   .display-wrap h5:nth-of-type(1) {
     margin-top: 0; }
-
-.home .display-wrap {
-  padding: 0; }
 
 .section-nav {
   background-color: #fff;

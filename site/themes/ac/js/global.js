@@ -39,4 +39,12 @@ $(document).ready(function() {
 		});
 
 	}
+	$("#mobile-nav_trigger").click(function() {
+		$('.mobile-nav').toggleClass('closed');
+		$(this).parent().toggleClass('nav_open');
+	});
+	$("#sub-nav_trigger").click(function() {
+		$('.mobile-sub-nav').toggleClass('closed');
+		$(this).parent().toggleClass('nav_open');
+	});
 });

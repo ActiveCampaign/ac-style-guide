@@ -13,9 +13,12 @@
 </head>
 
 <body>
+    {{ partial:mobile_nav }}
     <div class="grid g-cols">
         {{ partial:nav }}
-        {{ partial:sidebar }}
+        <div class="none l--block sidebar">
+            {{ partial:sidebar }}
+        </div>
         <div class="l--g-col-10 g-col-12 mt-10">
             {{ template_content }}
             {{ partial:footer }}
