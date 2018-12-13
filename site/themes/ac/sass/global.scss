@@ -112,7 +112,8 @@ footer {
 	z-index: 2;
 	background-color: color(ocean, 100);
 	width: 100%;
-	padding: 10px 24px;
+	top: 0;
+	left: 0;
 	height: 64px;
 
 	nav {
@@ -142,10 +143,6 @@ footer {
 		}
 	}
 }
-.home .navbar {
-	position: relative;
-	padding: 40px 0 40px 0;
-}
 
 // Mobile nav
 .navbar {
@@ -157,6 +154,7 @@ footer {
 	width: 100%;
 	position: fixed;
 	top: 64px;
+	left: 0;
 	margin-top: 0;
 	border-bottom: 1px color(ocean, 40) solid;
 	z-index: 2;
@@ -180,6 +178,8 @@ footer {
 .mobile-nav, .mobile-sub-nav {
 	position: fixed;
 	z-index: 1;
+	left: 0;
+	top: 0;
 	background: #fff;
 	width: 100%;
 	max-height: 100%;
@@ -223,6 +223,13 @@ footer {
 			}
 		}
 	}
+	&.closed {
+		transform: translateY(-100%);
+	}
+}
+.home .mobile-nav {
+	transform: translateY(55px);
+
 	&.closed {
 		transform: translateY(-100%);
 	}
@@ -324,9 +331,6 @@ footer {
 	h5:nth-of-type(1) {
 		margin-top: 0;
 	}
-}
-.home .display-wrap {
-	padding: 0;
 }
 
 // Sectional nav
