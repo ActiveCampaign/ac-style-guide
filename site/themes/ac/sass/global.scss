@@ -109,7 +109,7 @@ footer {
 // Main Nav
 .navbar {
 	position: fixed;
-	z-index: 2;
+	z-index: 3;
 	background-color: color(ocean, 100);
 	width: 100%;
 	top: 0;
@@ -148,6 +148,23 @@ footer {
 .navbar {
 	#mobile-nav_trigger {
 		margin-right: -8px;
+
+		.menu {
+			display: inline-block;
+		}
+		.x {
+			display:none;
+		}
+	}
+	.nav_open {
+		#mobile-nav_trigger {
+			.menu {
+				display: none;
+			}
+			.x {
+				display: inline-block;
+			}
+		}
 	}
 }
 .mobile-sub-header {
@@ -157,7 +174,7 @@ footer {
 	left: 0;
 	margin-top: 0;
 	border-bottom: 1px color(ocean, 40) solid;
-	z-index: 2;
+	z-index: 3;
 	background: #fff;
 
 	._state-control {
@@ -177,7 +194,7 @@ footer {
 }
 .mobile-nav, .mobile-sub-nav {
 	position: fixed;
-	z-index: 1;
+	z-index: 2;
 	left: 0;
 	top: 0;
 	background: #fff;
@@ -239,10 +256,10 @@ footer {
 // Sidebar
 .sidebar {
 	position: relative;
-	min-width: 200px !important;
+	min-width: 190px !important;
 	//max-width: 316px !important;
 	border-right: color(ocean, 40) 1px solid;
-	z-index: 1;
+	z-index: 2;
 	background-color: #fff;
 
 	nav {
@@ -339,13 +356,13 @@ footer {
 	border-bottom: color(ocean, 40) 1px solid;
 	top: 64px;
 	position: fixed;
-	width: calc(100% - 220px);
-	z-index: 5;
+	width: 100%;
+	z-index: 1;
 
 	.display-wrap {
 		max-width: 960px;
 		margin: 0 auto;
-		padding: 0px;
+		padding: 0px 1.5rem;
 
 		ul {
 			list-style: none;
