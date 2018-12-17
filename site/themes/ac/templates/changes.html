@@ -1,19 +1,21 @@
-<header class="display-wrap pt-0">
+<header class="display-wrap pt-0 no-bottom">
 	<h3 class="">{{ title }}</h3>
-	<p class="body fs-4 lh-4 slate-100 mb-8">
-		{{ description }}
-	</p>
 </header>
 <section>
-	<div class="display-wrap body">
-		{{ collection:terms sort="name" as="entries" }}
-    		<table class="style1">
-    			<tr>
-    				<td>{{ name }}</td>
-    				<td>{{ definition }}
-    			</tr>
-    		</table>
-    	</div>
-		{{ /collection:terms }}
+	<div class="display-wrap no-top">
+	{{ collection:changes group_by_date="F Y|change_date" sort="change_date" as="entries" }}
+			<div>
+			{{ date_groups }}
+			<div class="pb-4 bb bc-slate-40 bw-1">
+				<h6>{{ date_group }}</h6>
+				<ul class="style-medium fs-4">
+					{{ entries }}
+						<li>{{title}}</li>
+					{{ /entries }}
+				</ul>
+			</div>
+			{{ /date_groups }}
+		</div>
+	{{ /collection:changes }}
 	</div>
 </section>
