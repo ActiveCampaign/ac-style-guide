@@ -8029,7 +8029,10 @@ a:hover {
   text-decoration: underline; }
 
 ul, ol {
-  padding-left: 0; }
+  list-style-type: square;
+  padding-left: 16px; }
+  ul li, ol li {
+    margin-bottom: 8px; }
   ul.style-medium, ol.style-medium {
     margin-left: 0;
     padding-left: 4px;
@@ -8095,7 +8098,8 @@ footer {
     margin: 0;
     padding: 0; }
     .navbar nav ul li {
-      display: inline-block; }
+      display: inline-block;
+      margin-bottom: 0; }
       .navbar nav ul li a {
         color: #FAFBFF;
         font-family: "IBM Plex Sans", "Franklin Gothic", "ITC Franklin Gothic", helvetica, arial, sans-serif;
@@ -8159,7 +8163,8 @@ footer {
         font-weight: 500;
         font-family: "IBM Plex Sans", "Franklin Gothic", "ITC Franklin Gothic", helvetica, arial, sans-serif;
         font-size: 1.125rem;
-        line-height: 1.75rem; }
+        line-height: 1.75rem;
+        margin-bottom: 0; }
         .mobile-nav nav ul li a, .mobile-sub-nav nav ul li a {
           display: inline-block;
           padding: 8px;
@@ -8525,9 +8530,9 @@ img.light-border {
   line-height: 1.5rem; }
 
 code {
-  font-size: 14px;
-  padding: 16px !important;
-  background-color: #1F2129 !important; }
+  padding: 4px;
+  background-color: #EBFFFA;
+  color: #139879; }
 
 /*-- Home / --*/
 #home-heading {

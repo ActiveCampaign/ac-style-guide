@@ -32,8 +32,12 @@ a:hover {
 
 // Lists 
 ul, ol {
-	padding-left: 0;
+	list-style-type: square;
+	padding-left: $spacing-4;
 
+	li {
+		margin-bottom: $spacing-2;
+	}
 
 	&.style-medium {
 		margin-left: 0;
@@ -127,6 +131,7 @@ footer {
 			padding: 0;
 			li {
 				display: inline-block;
+				margin-bottom: 0;
 
 				a {
 					color: color(ocean, 20);
@@ -217,6 +222,7 @@ footer {
 			li {
 				font-weight: 500;
 				@include body-4;
+				margin-bottom: 0;
 
 				a {
 					display: inline-block;
@@ -724,7 +730,12 @@ img.light-border {
 
 // Code
 code {
-	font-size: 14px;
-	padding: 16px !important;
-	background-color: color(slate, 120) !important;
+	padding: $spacing-1;
+	background-color: color(mint, 20);
+	color: color(mint, 120); 
 }
+//code {
+//	font-size: 14px;
+//	padding: 16px !important;
+//	background-color: color(slate, 120) !important;
+//}

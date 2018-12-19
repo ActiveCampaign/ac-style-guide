@@ -41,6 +41,14 @@
             </li>
             {{ /nav }}
 		</ul>
+        <ul>
+            <li class="section-heading">Resources</li>
+            {{ nav from="/patterns/resources" include_home="false" scope="tag" show_unpublished="false"}}
+            <li{{ if is_current or is_parent }} class="active" {{ /if }}>
+                <a href="{{ url }}">{{ tag:nav_title or title }}</a>
+            </li>
+            {{ /nav }}
+        </ul>
 
 	</nav>
 </div>
