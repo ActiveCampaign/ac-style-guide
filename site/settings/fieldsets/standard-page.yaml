@@ -27,11 +27,6 @@ sections:
       description:
         type: textarea
         display: description
-      page_description:
-        type: text
-        instructions: 'Opening page description.'
-        display: 'Page Description'
-        default: 'Describe your page here. Be descriptive about the content.'
   section_1:
     display: 'Section 1'
     fields:

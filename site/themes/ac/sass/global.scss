@@ -97,6 +97,7 @@ p {
 html, body {
 	overflow-x: hidden;
 	background: #fff;
+	@include body-3;
 }
 header {
 	h1 {
@@ -115,7 +116,6 @@ footer {
 	width: 100%;
 	top: 0;
 	left: 0;
-	height: 64px;
 
 	nav {
 		.logo-top {
@@ -132,7 +132,7 @@ footer {
 					color: color(ocean, 20);
 					@include body-2;
 					font-weight: 700;
-					padding: 0 12px;
+					padding: 0 $spacing-3;
 					opacity: .8;
 				}
 
@@ -171,7 +171,7 @@ footer {
 .mobile-sub-header {
 	width: 100%;
 	position: fixed;
-	top: 64px;
+	top: 4rem;
 	left: 0;
 	margin-top: 0;
 	border-bottom: 1px color(ocean, 40) solid;

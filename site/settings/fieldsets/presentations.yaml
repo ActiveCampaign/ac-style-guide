@@ -1,0 +1,10 @@
+sections:
+  main:
+    display: Main
+    fields:
+      template:
+        type: template
+        width: 25
+        display: template
+taxonomies: true
+title: Page-Presentations

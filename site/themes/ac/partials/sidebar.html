@@ -3,7 +3,7 @@
 	<nav>
 		<ul>
 			<li class="section-heading">Brand</li>
-			{{ nav from="/brand" include_home="false" scope="tag" }}
+			{{ nav from="/brand" include_home="false" scope="tag" show_unpublished="false"}}
             <li{{ if is_current or is_parent }} class="active" {{ /if }}>
                 <a href="{{ url }}">{{ tag:nav_title or title }}</a>
             </li>
@@ -19,7 +19,7 @@
 	<nav>
 		<ul>
 			<li class="section-heading">Getting Started</li>
-			{{ nav from="/patterns" include_home="false" scope="tag" exclude="/patterns/controls|/patterns/foundation"}}
+			{{ nav from="/patterns" include_home="false" scope="tag" exclude="/patterns/controls|/patterns/foundation" show_unpublished="false"}}
             <li{{ if is_current or is_parent }} class="active" {{ /if }}>
                 <a href="{{ url }}">{{ tag:nav_title or title }}</a>
             </li>
@@ -27,7 +27,7 @@
         </ul>
         <ul>
             <li class="section-heading">Foundation</li>
-            {{ nav from="/patterns/foundation" include_home="false" scope="tag" }}
+            {{ nav from="/patterns/foundation" include_home="false" scope="tag" show_unpublished="false"}}
             <li{{ if is_current or is_parent }} class="active" {{ /if }}>
                 <a href="{{ url }}">{{ tag:nav_title or title }}</a>
             </li>
@@ -35,7 +35,7 @@
 		</ul>
         <ul>
             <li class="section-heading">Controls</li>
-            {{ nav from="/patterns/controls" include_home="false" scope="tag" }}
+            {{ nav from="/patterns/controls" include_home="false" scope="tag" show_unpublished="false"}}
             <li{{ if is_current or is_parent }} class="active" {{ /if }}>
                 <a href="{{ url }}">{{ tag:nav_title or title }}</a>
             </li>
@@ -49,13 +49,21 @@
 <div class="">
 	<nav>
 		<ul>
-			<li class="section-heading">Resources</li>
-			{{ nav from="/resources" include_home="false" scope="tag" }}
+			<li class="section-heading">General</li>
+			{{ nav from="/resources" include_home="false" scope="tag" exclude="/resources/templates" show_unpublished="false"}}
             <li{{ if is_current or is_parent }} class="active" {{ /if }}>
                 <a href="{{ url }}">{{ tag:nav_title or title }}</a>
             </li>
             {{ /nav }}
 		</ul>
+        <ul>
+            <li class="section-heading">Templates</li>
+            {{ nav from="/resources/templates" include_home="false" scope="tag" show_unpublished="false"}}
+            <li{{ if is_current or is_parent }} class="active" {{ /if }}>
+                <a href="{{ url }}">{{ tag:nav_title or title }}</a>
+            </li>
+            {{ /nav }}
+        </ul>
 
 	</nav>
 </div>
