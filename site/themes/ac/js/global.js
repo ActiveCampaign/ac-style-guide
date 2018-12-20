@@ -39,12 +39,21 @@ $(document).ready(function() {
 		});
 
 	}
+
+	// Mobile nav
 	$("#mobile-nav_trigger").click(function() {
+		if ($('.mobile-sub-header ._state-control').hasClass('nav_open')) {
+			$(this).toggleClass('nav_open');
+			$('.mobile-sub-nav').toggleClass('closed');
+		}
 		$('.mobile-nav').toggleClass('closed');
 		$(this).parent().toggleClass('nav_open');
 	});
 	$("#sub-nav_trigger").click(function() {
 		$('.mobile-sub-nav').toggleClass('closed');
-		$(this).parent().toggleClass('nav_open');
+		$(this).parent().toggleClass('nav_open'); 
 	});
+
+	// Automatically adjust sectional nav width based
+
 });

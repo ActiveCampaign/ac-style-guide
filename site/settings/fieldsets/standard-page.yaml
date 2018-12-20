@@ -18,6 +18,13 @@ sections:
         type: template
         display: template
         width: 25
+      no_children:
+        cheatsheet: false
+        restrict_assets: false
+        type: markdown
+        width: 25
+        display: no_children
+        default: 'false'
       title:
         display: Title
         type: text
@@ -27,11 +34,6 @@ sections:
       description:
         type: textarea
         display: description
-      page_description:
-        type: text
-        instructions: 'Opening page description.'
-        display: 'Page Description'
-        default: 'Describe your page here. Be descriptive about the content.'
   section_1:
     display: 'Section 1'
     fields:

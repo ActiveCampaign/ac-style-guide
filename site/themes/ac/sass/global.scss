@@ -32,15 +32,20 @@ a:hover {
 
 // Lists 
 ul, ol {
-	padding-left: 0;
+	list-style-type: square;
+	padding-left: $spacing-4;
 
+	li {
+		margin-bottom: $spacing-2;
+	}
 
 	&.style-medium {
 		margin-left: 0;
-		padding-left: 16px;
+		padding-left: $spacing-1;
+		list-style: none;
 
 		li {
-			font-size: 16px;
+			@incude body-3;
 		}
 	}
 
@@ -96,6 +101,7 @@ p {
 html, body {
 	overflow-x: hidden;
 	background: #fff;
+	@include body-3;
 }
 header {
 	h1 {
@@ -109,12 +115,11 @@ footer {
 // Main Nav
 .navbar {
 	position: fixed;
-	z-index: 2;
+	z-index: 3;
 	background-color: color(ocean, 100);
 	width: 100%;
 	top: 0;
 	left: 0;
-	height: 64px;
 
 	nav {
 		.logo-top {
@@ -126,13 +131,15 @@ footer {
 			padding: 0;
 			li {
 				display: inline-block;
+				margin-bottom: 0;
 
 				a {
 					color: color(ocean, 20);
 					@include body-2;
 					font-weight: 700;
-					padding: 0 12px;
+					padding: 0 $spacing-3;
 					opacity: .8;
+					line-height: inherit;
 				}
 
 				&.active a {
@@ -148,16 +155,33 @@ footer {
 .navbar {
 	#mobile-nav_trigger {
 		margin-right: -8px;
+
+		.menu {
+			display: inline-block;
+		}
+		.x {
+			display:none;
+		}
+	}
+	.nav_open {
+		#mobile-nav_trigger {
+			.menu {
+				display: none;
+			}
+			.x {
+				display: inline-block;
+			}
+		}
 	}
 }
 .mobile-sub-header {
 	width: 100%;
 	position: fixed;
-	top: 64px;
+	top: 4rem;
 	left: 0;
 	margin-top: 0;
 	border-bottom: 1px color(ocean, 40) solid;
-	z-index: 2;
+	z-index: 3;
 	background: #fff;
 
 	._state-control {
@@ -177,7 +201,7 @@ footer {
 }
 .mobile-nav, .mobile-sub-nav {
 	position: fixed;
-	z-index: 1;
+	z-index: 2;
 	left: 0;
 	top: 0;
 	background: #fff;
@@ -199,6 +223,7 @@ footer {
 			li {
 				font-weight: 500;
 				@include body-4;
+				margin-bottom: 0;
 
 				a {
 					display: inline-block;
@@ -239,15 +264,15 @@ footer {
 // Sidebar
 .sidebar {
 	position: relative;
-	min-width: 200px !important;
+	min-width: 11.875rem !important;
 	//max-width: 316px !important;
 	border-right: color(ocean, 40) 1px solid;
-	z-index: 1;
+	z-index: 2;
 	background-color: #fff;
 
 	nav {
 		margin: 0;
-		padding: 100px 24px 24px 24px;
+		padding: 6.25rem 1.5rem 1.5rem 1.5rem;
 		position: fixed;
 		z-index: 0;
 		top: 0;
@@ -270,7 +295,7 @@ footer {
 		ul {
 			list-style: none;
 			padding: 0;
-			margin: 0 0 24px 0;
+			margin: 0 0 1.5rem 0;
 
 			li {
 				display: block;
@@ -293,7 +318,7 @@ footer {
 					border-radius: 4px;
 
 					&:hover {
-		
+						text-decoration: underline;
 					}
 				}
 
@@ -315,15 +340,15 @@ footer {
 	color: color(slate, 60);
 
 	.display-wrap {
-		padding-top: 28px !important;
-		padding-bottom: 20px !important;
+		padding-top: 1.5rem !important;
+		padding-bottom: 1.2rem !important;
 	}
 }
 .display-wrap {
 	position: relative;
-	padding: 64px 1.5rem;
+	padding: 4rem 1.5rem;
 	margin: 0 auto;
-	max-width: 960px;
+	max-width: 60rem;
 
 	&.separator {
 		border-top: color(slate, 40) 1px solid;
@@ -331,21 +356,27 @@ footer {
 	h5:nth-of-type(1) {
 		margin-top: 0;
 	}
+	&.no-top {
+		padding-top: 0;
+	}
+	&.no-bottom {
+		padding-bottom: 0;
+	}
 }
 
 // Sectional nav
 .section-nav {
 	background-color: #fff;
 	border-bottom: color(ocean, 40) 1px solid;
-	top: 64px;
+	top: 58px;
 	position: fixed;
-	width: calc(100% - 220px);
-	z-index: 5;
+	width: 100%;
+	z-index: 1;
 
 	.display-wrap {
-		max-width: 960px;
+		max-width: 60rem;
 		margin: 0 auto;
-		padding: 0px;
+		padding: 0 1.5rem;
 
 		ul {
 			list-style: none;
@@ -639,36 +670,11 @@ input {
 
 /*-- Utilities and other similar shits --*/
 
-.full-width {
-	width: 100%;
-}
-.float-left {
-	float: left;
-}
-.bordered {
-	border: color(slate, 20) 1px solid;
-}
-.rounded-4 {
-	border-radius: 4px;
-}
-.rounded-8 {
-	border-radius: 8px;
-}
-.rounded-12 {
-	border-radius: 12px;
-}
-.rounded-16 {
-	border-radius: 12px;
-}
 .disabled {
 	opacity: .3;
 	cursor: not-allowed;
 	pointer-events: none;
 }
-.pill {
-	border-radius: 40px;
-}
-
 
 
 // Images
@@ -725,7 +731,12 @@ img.light-border {
 
 // Code
 code {
-	font-size: 14px;
-	padding: 16px !important;
-	background-color: color(slate, 120) !important;
+	padding: $spacing-1;
+	background-color: color(mint, 20);
+	color: color(mint, 120); 
 }
+//code {
+//	font-size: 14px;
+//	padding: 16px !important;
+//	background-color: color(slate, 120) !important;
+//}

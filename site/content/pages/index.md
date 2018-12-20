@@ -1,13 +1,13 @@
 ---
 layout: home
 changes_num: 6
-header_content: '<p class=" title-5 m--title-7 pt-10 white" id="home-heading">Design for everyone through a shared language</p>'
+header_content: '<p class=" title-6 m--title-7 l--title-8 pt-10 white" id="home-heading">Design for everyone through a shared language</p>'
 featured_content: |
   <div class="grid g-cols home-feature ai-center">
-  	<div class="g-col-12 l--g-col-5">
+  	<div class="g-col-12 m--g-col-5">
   		<img src="/assets/img/home-color.png" width="320">
   	</div>
-  	<div class="g-col-12 l--g-col-7 mt-8 m--mt-0">
+  	<div class="g-col-12 m--g-col-7 mt-8 m--mt-0">
   		<h5 class="">Color all the things</h5>
   		<p class="body l--fs-5 lh-5">
   			ActiveCampaign colors allows you to create beautiful designs that make an impact on everything from product design to marketing material.

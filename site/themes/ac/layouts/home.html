@@ -49,7 +49,12 @@
     </section>
     {{ partial:footer }}
 
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            console.log($('.sidebar').width());
+        });
+    </script>
     <script src="{{ theme:asset src="dist/index.bundle.js" cache_bust="true" }}"></script>
 </body>
 </html>
