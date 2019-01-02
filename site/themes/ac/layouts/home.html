@@ -10,8 +10,8 @@
 
 </head>
 
-<body class="home">
-    <header class="bg-ocean pt-0">
+<body class="home theme-ocean">
+    <header class="pt-0">
         <div class="display-wrap ta-center">
             {{ partial:nav_home }}
 
@@ -20,17 +20,12 @@
     </header>
     <section>
         <div class="display-wrap">
-            {{ featured_content }}
+            {{ quick_links_content }}
         </div>
     </section>
     <section>
         <div class="display-wrap">
-            {{ quick_links_content }}
-        </div>
-    </section>
-    <section class="pt-10">
-        <div class="display-wrap pt-10">
-            <div class="p-6 bw-2 bs-solid bc-slate-20 br-1">
+            <div class="p-6 bw-1 bs-solid bc-ocean-40 br-1">
                 <p class="fs-3 tt-upper slate-80 fw-700 mt-0 ls mb-4">What's New?</p>
                 {{ collection:changes limit="{{ changes_num }}" as="entries" }}
                     <table>
@@ -42,7 +37,7 @@
                         {{ /entries }}
                     </table>
                 {{ /collection:changes }}
-                <a href="/changes" class="fw-500 fs-3 mt-4 block">Read More Updates</a>
+                <a href="/changes" class="fw-500 fs-3 mt-4 block">Read More <i class="rarr b-ocean"></i></a>
             </div>
 
         </div>
