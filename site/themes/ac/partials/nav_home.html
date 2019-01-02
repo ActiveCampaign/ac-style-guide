@@ -19,7 +19,7 @@
                     <a href="/" title="Return Home" class="block"><img src="/assets/img/logo-top.svg" width="44px" class="block l--none"></a>
                 </div>
                 <ul class="none l--inline-block va-middle">
-                    {{ nav from="/" include_home="false" exclude="changes" scope="tag" }}
+                    {{ nav from="/" include_home="false" exclude="changes|introduction" scope="tag" }}
                     <li{{ if is_current or is_parent }} class="active"{{ /if }}>
                         <a href="{{ url }}">{{ tag:nav_title or title }}
                         </a>

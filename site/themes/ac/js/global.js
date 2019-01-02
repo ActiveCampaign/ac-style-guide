@@ -54,6 +54,4 @@ $(document).ready(function() {
 		$(this).parent().toggleClass('nav_open'); 
 	});
 
-	// Automatically adjust sectional nav width based
-
 });

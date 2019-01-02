@@ -21,13 +21,28 @@ h6 {
 	@include title-1;
 }
 
-
+// Links
 a:link, a:hover, a:visited {
-	color: color(ocean, 100);
 	text-decoration: none;
 }
 a:hover {
 	text-decoration: underline;
+}
+
+body.theme-ocean {
+	a:link, a:hover, a:visited {
+		color: color(ocean, 100);
+	}
+}
+body.theme-slate {
+	a:link, a:hover, a:visited {
+		color: color(slate, 100);
+	}
+}
+body.theme-lavender {
+	a:link, a:hover, a:visited {
+		color: color(lavender, 120);
+	}
 }
 
 // Lists 
@@ -108,6 +123,22 @@ header {
 		margin-top: 0;
 	}
 }
+
+body.theme-ocean.home {
+	header {
+		background-color: color(ocean, 100);
+	}
+}
+body.theme-slate.home {
+	header {
+		background-color: color(slate, 100);
+	}
+}
+body.theme-lavender.home {
+	header {
+		background-color: color(lavender, 120);
+	}
+}
 footer { 
 	margin-top: 60px;
 }
@@ -116,7 +147,6 @@ footer {
 .navbar {
 	position: fixed;
 	z-index: 3;
-	background-color: color(ocean, 100);
 	width: 100%;
 	top: 0;
 	left: 0;
@@ -134,7 +164,7 @@ footer {
 				margin-bottom: 0;
 
 				a {
-					color: color(ocean, 20);
+					color: #fff !important;
 					@include body-2;
 					font-weight: 700;
 					padding: 0 $spacing-3;
@@ -148,6 +178,21 @@ footer {
 			}
 			
 		}
+	}
+}
+body.theme-ocean {
+	.navbar {
+		background-color: color(ocean, 100);
+	}
+}
+body.theme-slate {
+	.navbar {
+		background-color: color(slate, 100);
+	}
+}
+body.theme-lavender {
+	.navbar {
+		background-color: color(lavender, 120);
 	}
 }
 
@@ -362,6 +407,7 @@ footer {
 	&.no-bottom {
 		padding-bottom: 0;
 	}
+
 }
 
 // Sectional nav
@@ -561,6 +607,7 @@ input {
 
 	&:focus, &:hover {
 		background-color: color(ocean, 120);
+		text-decoration: none;
 	}
 
 	&.btn-small {
@@ -574,6 +621,7 @@ input {
 	}
 	&.btn-mint {
 		background-color: color(mint, 100);
+		color: #fff !important;
 
 		&:focus, &:hover {
 			background-color: color(mint, 120);
