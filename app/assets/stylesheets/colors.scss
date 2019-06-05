@@ -8,6 +8,7 @@ $color-palette: (
 		 80: #5884EA,
 		 60: #9EB7F3,
 		 40: #E3EBFC,
+		 30: #EDF3FE,
 		 20: #FAFBFF
 	),
 	slate: (
@@ -16,7 +17,8 @@ $color-palette: (
 		 80: #5F667E,
 		 60: #9298AD,
 		 40: #CED3E0,
-		 20: #F7F9FF
+		 30: #EDF0F7,
+		 20: #F7F9FC
 	),
 	mint: (
 		120: #139879,
@@ -27,7 +29,7 @@ $color-palette: (
 		 20: #EBFFFA
 	),
 	strawberry: (
-		120: #D60D46,
+		120: #E40E49,
 		100: #F3376B,
 		 80: #F56E94,
 		 60: #FAA5BD,
@@ -80,6 +82,9 @@ $color-palette: (
 .bg-ocean-20 {
 	background-color: color(ocean, 20);
 }
+.bg-ocean-30 {
+	background-color: color(ocean, 30);
+}
 .bg-ocean-40 {
 	background-color: color(ocean, 40);
 }
@@ -97,6 +102,9 @@ $color-palette: (
 }
 .bg-slate-20 {
 	background-color: color(slate, 20);
+}
+.bg-slate-30 {
+	background-color: color(slate, 30);
 }
 .bg-slate-40 {
 	background-color: color(slate, 40);
